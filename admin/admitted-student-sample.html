@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from thememakker.com/templates/swift/university/students.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Dec 2023 05:47:56 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<title>:: Swift - University Admin ::</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- Favicon-->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Custom Css -->
+<link rel="stylesheet" href="assets/css/main.css">
+
+<link href="assets/plugins/jquery-datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/themes/all-themes.css"/>
+<!-- Bootstrap Material Datetime Picker Css -->
+<link href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/flick/jquery-ui.css">
+</head>
+
+<body class="theme-blush">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-blush">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Please wait...</p>
+    </div>
+</div>
+<!-- #END# Page Loader --> 
+
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars --> 
+
+<!-- Morphing Search  -->
+<div id="morphsearch" class="morphsearch">
+    <form class="morphsearch-form">
+        <div class="form-group m-0">
+            <input value="" type="search" placeholder="Search..." class="form-control morphsearch-input" />
+            <button class="morphsearch-submit" type="submit">Search</button>
+        </div>
+    </form>
+    <div class="morphsearch-content">
+        <div class="column">
+            <h2>People</h2>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar1.jpg" alt=""/>
+                <h3>Sara Soueidan</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar2.jpg" alt=""/>
+                <h3>Rachel Smith</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar3.jpg" alt=""/>
+                <h3>Peter Finlan</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar4.jpg" alt=""/>
+                <h3>Patrick Cox</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar5.jpg" alt=""/>
+                <h3>Tim Holman</h3>
+            </a>
+        </div>
+        <div class="column">
+            <h2>Popular</h2>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar5.jpg" alt=""/>
+                <h3>Sara Soueidan</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar4.jpg" alt=""/>
+                <h3>Rachel Smith</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar3.jpg" alt=""/>
+                <h3>Peter Finlan</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar2.jpg" alt=""/>
+                <h3>Patrick Cox</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar1.jpg" alt=""/>
+                <h3>Tim Holman</h3>
+            </a>
+        </div>
+        <div class="column">
+            <h2>Recent</h2>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar1.jpg" alt=""/>
+                <h3>Sara Soueidan</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar2.jpg" alt=""/>
+                <h3>Rachel Smith</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar3.jpg" alt=""/>
+                <h3>Peter Finlan</h3>
+            </a>
+            <a class="media-object" href="#"> 
+                <img class="rounded-circle" src="assets/images/sm/avatar4.jpg" alt=""/>
+                <h3>Patrick Cox</h3>
+            </a>
+            <a class="media-object" href="#">
+                <img class="rounded-circle" src="assets/images/sm/avatar5.jpg" alt=""/>
+                <h3>Tim Holman</h3>
+            </a>
+        </div>
+    </div>
+    <!-- /morphsearch-content --> 
+    <span class="morphsearch-close"></span>
+</div>
+
+<!-- Top Bar -->
+<nav class="navbar clearHeader">
+    <div class="col-12">
+        <div class="navbar-header"> <a href="javascript:void(0);" class="bars"></a> <a class="navbar-brand" href="index.html">Swift University</a> </div>
+        <ul class="nav navbar-nav navbar-right">
+            <!-- Notifications -->
+            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="zmdi zmdi-notifications"></i> <span class="label-count">7</span> </a>
+                <ul class="dropdown-menu">
+                    <li class="header">NOTIFICATIONS</li>
+                    <li class="body">
+                        <ul class="menu">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="icon-circle bg-light-green"><i class="zmdi zmdi-account-add"></i></div>
+                                    <div class="menu-info">
+                                        <h4>12 new members joined</h4>
+                                        <p> <i class="material-icons">access_time</i> 14 mins ago </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="icon-circle bg-cyan"><i class="zmdi zmdi-shopping-cart-plus"></i></div>
+                                    <div class="menu-info">
+                                        <h4>4 sales made</h4>
+                                        <p> <i class="material-icons">access_time</i> 22 mins ago </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="icon-circle bg-red"><i class="zmdi zmdi-delete"></i></div>
+                                    <div class="menu-info">
+                                        <h4><b>Nancy Doe</b> deleted account</h4>
+                                        <p> <i class="material-icons">access_time</i> 3 hours ago </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="icon-circle bg-orange"><i class="zmdi zmdi-edit"></i></div>
+                                    <div class="menu-info">
+                                        <h4><b>Nancy</b> changed name</h4>
+                                        <p> <i class="material-icons">access_time</i> 2 hours ago </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="icon-circle bg-blue-grey"><i class="zmdi zmdi-comment-alt-text"></i></div>
+                                    <div class="menu-info">
+                                        <h4><b>John</b> commented your post</h4>
+                                        <p> <i class="material-icons">access_time</i> 4 hours ago </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="icon-circle bg-light-green"><i class="zmdi zmdi-refresh-alt"></i></div>
+                                    <div class="menu-info">
+                                        <h4><b>John</b> updated status</h4>
+                                        <p> <i class="material-icons">access_time</i> 3 hours ago </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <div class="icon-circle bg-purple"><i class="zmdi zmdi-settings"></i></div>
+                                    <div class="menu-info">
+                                        <h4>Settings updated</h4>
+                                        <p> <i class="material-icons">access_time</i> Yesterday </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer"> <a href="javascript:void(0);">View All Notifications</a> </li>
+                </ul>
+            </li>
+            <!-- #END# Notifications --> 
+            <!-- Tasks -->
+            <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="zmdi zmdi-flag"></i><span class="label-count">9</span> </a>
+                <ul class="dropdown-menu">
+                    <li class="header">TASKS</li>
+                    <li class="body">
+                        <ul class="menu tasks">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <h4> Task 1 <small>32%</small> </h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 32%"> </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <h4>Task 2 <small>45%</small> </h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <h4>Task 3 <small>54%</small> </h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-teal" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 54%"> </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <h4> Task 4 <small>65%</small> </h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 65%"> </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer"> <a href="javascript:void(0);">View All Tasks</a> </li>
+                </ul>
+            </li>
+            <!-- #END# Tasks -->
+            <li><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="zmdi zmdi-settings"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<!-- #Top Bar -->
+
+<!--Side menu and right menu -->
+<section> 
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar"> 
+        <!-- User Info -->
+        <div class="user-info">
+            <div class="admin-image"> <img src="assets/images/random-avatar7.jpg" alt=""> </div>
+            <div class="admin-action-info"> <span>Welcome</span>
+                <h3>Prof. John Smith</h3>
+                <ul>
+                    <li><a data-placement="bottom" title="Go to Inbox" href="mail-inbox.html"><i class="zmdi zmdi-email"></i></a></li>
+                    <li><a data-placement="bottom" title="Go to Profile" href="profile.html"><i class="zmdi zmdi-account"></i></a></li>                    
+                    <li><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="zmdi zmdi-settings"></i></a></li>
+                    <li><a data-placement="bottom" title="Full Screen" href="sign-in.html" ><i class="zmdi zmdi-sign-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- #User Info --> 
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">MAIN NAVIGATION</li>
+                <li><a href="index.html"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a></li>
+                <li><a href="events.html"><i class="zmdi zmdi-calendar-check"></i><span>Event Management</span> </a></li>
+                <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-account"></i><span>Professors</span> </a>
+                    <ul class="ml-menu">
+                        <li><a href="professors.html">All Professors</a></li>
+                        <li><a href="add-professors.html">Add professors</a></li>                       
+                        <li><a href="profile.html">professors Profile</a></li>
+                    </ul>
+                </li>                
+                <li class="active open"><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-accounts-outline"></i><span>Students</span> </a>
+                    <ul class="ml-menu">
+                        <li class="active"><a href="students.html">All Students</a></li>
+                        <li><a href="add-students.html">Add Students</a></li>                       
+                        <li><a href="students-profile.html">Students Profile</a></li>
+                        <li><a href="students-invoice.html">Students Invoice</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-graduation-cap"></i><span>Courses</span> </a>
+                    <ul class="ml-menu">
+                        <li><a href="courses.html">All Courses</a></li>
+                        <li><a href="add-courses.html">Add Courses</a></li>                       
+                        <li><a href="courses-info.html">Courses Info</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-book"></i><span>Library</span> </a>
+                    <ul class="ml-menu">
+                        <li><a href="library.html">All Library</a></li>
+                        <li><a href="add-library.html">Add Library</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-city-alt"></i><span>Departments</span> </a>
+                    <ul class="ml-menu">
+                        <li><a href="departments.html">All Departments</a></li>
+                        <li><a href="add-departments.html">Add Departments</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-mood"></i><span>Staffs</span> </a>
+                    <ul class="ml-menu">
+                        <li><a href="staffs.html">All Staffs</a></li>
+                        <li><a href="add-staffs.html">Add Staffs</a></li>                       
+                        <li><a href="staffs-info.html">Staffs Profile</a></li>
+                    </ul>
+                </li>
+                <li><a href="centres.html"><i class="zmdi zmdi-pin"></i><span>University Centres</span></a></li>
+                <li><a href="reports.html"><i class="zmdi zmdi-file-text"></i><span>Reports</span></a></li>
+                <li><a href="widgets.html"><i class="zmdi zmdi-delicious"></i><span>Widgets</span></a></li>
+                <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-copy"></i><span>Extra Pages</span> </a>
+                    <ul class="ml-menu">
+                        <li><a href="sign-in.html">Sign In</a> </li>
+                        <li><a href="sign-up.html">Sign Up</a> </li>
+                        <li><a href="forgot-password.html">Forgot Password</a> </li>
+                        <li><a href="404.html">Page 404</a> </li>
+                        <li><a href="500.html">Page 500</a> </li>
+                        <li><a href="page-offline.html">Page Offline</a> </li>
+                        <li><a href="locked.html">Locked Screen</a> </li>
+                        <li><a href="blank.html">Blank Page</a> </li>
+                        <li><a href="contact.html">Contact Us</a> </li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-blogger"></i><span>Blogger</span> </a>
+                    <ul class="ml-menu">
+                        <li> <a href="blog.html">Blog List</a></li>
+                        <li> <a href="blog-details.html">Blog Single</a></li>
+                    </ul>
+                </li>
+                <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Forms</span> </a>
+                    <ul class="ml-menu">
+                        <li> <a href="basic-form-elements.html">Basic Form Elements</a> </li>
+                        <li> <a href="advanced-form-elements.html">Advanced Form Elements</a> </li>
+                        <li> <a href="form-examples.html">Form Examples</a> </li>
+                        <li> <a href="form-validation.html">Form Validation</a> </li>
+                        <li> <a href="form-wizard.html">Form Wizard</a> </li>
+                        <li> <a href="editors.html">Editors</a> </li>
+                    </ul>
+                </li>
+                <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-swap-alt"></i><span>User Interface (UI)</span> </a>
+                    <ul class="ml-menu">
+                        <li><a href="typography.html">Typography</a> </li>
+                        <li><a href="helper-classes.html">Helper Classes</a></li>
+                        <li><a href="alerts.html">Alerts</a> </li>
+                        <li><a href="animations.html">Animations</a> </li>
+                        <li><a href="badges.html">Badges</a> </li>
+                        <li><a href="breadcrumbs.html">Breadcrumbs</a> </li>
+                        <li><a href="buttons.html">Buttons</a> </li>
+                        <li><a href="collapse.html">Collapse</a> </li>
+                        <li><a href="colors.html">Colors</a> </li>
+                        <li><a href="dialogs.html">Dialogs</a> </li>
+                        <li><a href="icons.html">Icons</a> </li>
+                        <li><a href="labels.html">Labels</a> </li>
+                        <li><a href="list-group.html">List Group</a> </li>
+                        <li><a href="media-object.html">Media Object</a> </li>
+                        <li><a href="modals.html">Modals</a> </li>
+                        <li><a href="notifications.html">Notifications</a> </li>
+                        <li><a href="pagination.html">Pagination</a> </li>
+                        <li><a href="preloaders.html">Preloaders</a> </li>
+                        <li><a href="progressbars.html">Progress Bars</a> </li>
+                        <li><a href="range-sliders.html">Range Sliders</a> </li>
+                        <li><a href="sortable-nestable.html">Sortable & Nestable</a> </li>
+                        <li><a href="tabs.html">Tabs</a> </li>
+                        <li><a href="waves.html">Waves</a> </li>
+                    </ul>
+                </li>
+                <li class="header">LABELS</li>
+                <li><a href="javascript:void(0);"><i class="zmdi zmdi-chart-donut col-red"></i><span>Important</span></a></li>
+                <li><a href="javascript:void(0);"><i class="zmdi zmdi-chart-donut col-amber"></i><span>Warning</span></a></li>
+                <li><a href="javascript:void(0);"><i class="zmdi zmdi-chart-donut col-blue"></i><span>Information</span></a></li>
+            </ul>
+        </div>
+        <!-- #Menu -->
+    </aside>
+    <!-- #END# Left Sidebar --> 
+    <!-- Right Sidebar -->
+    <aside id="rightsidebar" class="right-sidebar">
+        <ul class="nav nav-tabs tab-nav-right" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#skins">Skins</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#chat">Chat</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings">Setting</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane in active in active" id="skins">
+                <ul class="demo-choose-skin">
+                    <li data-theme="red"><div class="red"></div><span>Red</span> </li>
+                    <li data-theme="purple"><div class="purple"></div><span>Purple</span> </li>
+                    <li data-theme="blue"><div class="blue"></div><span>Blue</span> </li>
+                    <li data-theme="cyan"><div class="cyan"></div><span>Cyan</span> </li>
+                    <li data-theme="green"><div class="green"></div><span>Green</span> </li>
+                    <li data-theme="deep-orange"><div class="deep-orange"></div><span>Deep Orange</span> </li>
+                    <li data-theme="blue-grey"><div class="blue-grey"></div><span>Blue Grey</span> </li>
+                    <li data-theme="black"><div class="black"></div><span>Black</span> </li>
+                    <li data-theme="blush"  class="active"><div class="blush"></div><span>Blush</span> </li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="chat">
+                <div class="demo-settings">
+                    <div class="search">
+                        <div class="input-group">
+                            <div class="form-line">
+                                <input type="text" class="form-control" placeholder="Search..." required autofocus>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>Recent</h6>
+                    <ul>
+                        <li class="online">
+                            <div class="media">
+                                <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                <div class="media-body">
+                                    <span class="name">Claire Sassu</span> <span class="message">Can you share the...</span> <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="online">
+                            <div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                <div class="media-body">
+                                    <span class="name">Maggie jackson</span> <span class="message">Can you share the...</span> <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="online">
+                            <div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar3.jpg" alt=""> </a>
+                                <div class="media-body">
+                                    <span class="name">Joel King</span> <span class="message">Ready for the meeti...</span> <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h6>Contacts</h6>
+                    <ul>
+                        <li class="offline">
+                            <div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar4.jpg" alt=""> </a>
+                                <div class="media-body">
+                                    <span class="name">Joel King</span> <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="online">
+                            <div class="media"> <a  role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar1.jpg" alt=""> </a>
+                                <div class="media-body">
+                                    <span class="name">Joel King</span> <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="offline">
+                            <div class="media"> <a class="pull-left " role="button" tabindex="0"> <img class="media-object " src="assets/images/xs/avatar2.jpg" alt=""> </a>
+                                <div class="media-body">
+                                    <span class="name">Joel King</span> <span class="badge badge-outline status"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="settings">
+                <div class="demo-settings">
+                    <p>GENERAL SETTINGS</p>
+                    <ul class="setting-list">
+                        <li>
+                            <span>Report Panel Usage</span>
+                            <div class="switch">
+                                <label><input type="checkbox" checked><span class="lever"></span></label>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Email Redirect</span>
+                            <div class="switch">
+                                <label><input type="checkbox"><span class="lever"></span></label>
+                            </div>
+                        </li>
+                    </ul>
+                    <p>SYSTEM SETTINGS</p>
+                    <ul class="setting-list">
+                        <li>
+                            <span>Notifications</span>
+                            <div class="switch">
+                                <label><input type="checkbox" checked><span class="lever"></span></label>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Auto Updates</span>
+                            <div class="switch">
+                                <label><input type="checkbox" checked><span class="lever"></span></label>
+                            </div>
+                        </li>
+                    </ul>
+                    <p>ACCOUNT SETTINGS</p>
+                    <ul class="setting-list">
+                        <li>
+                            <span>Offline</span>
+                            <div class="switch">
+                                <label><input type="checkbox"><span class="lever"></span></label>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Location Permission</span>
+                            <div class="switch">
+                                <label><input type="checkbox" checked><span class="lever"></span></label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- #END# Right Sidebar --> 
+</section>
+<!--Side menu and right menu -->
+
+<!-- main content -->
+<section class="content patients">
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h4 style="text-align: center;">New Student Application</h4>
+                <br><br>
+                <div class="row clearfix studentApplicationViewCss">
+                    <div class="col-md-12 textBtwLines">
+                        <span>Center Information</span>
+                    </div>
+                    
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix" style="align-items: center;">
+                            <div class="col-md-2 center">
+                                Center Code
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" id="email_address_2" class="form-control" value="APACC0786">
+                            </div>
+                            <div class="col-md-2 center">
+                                Center Name
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" id="email_address_2" class="form-control" value="ALI'S EDUCATIONAL ACADEMY">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 textBtwLines generalInformationCss">
+                        <span>General Information</span>
+                    </div>
+
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="col-md-12">
+                            <div class="row clearfix center" style="align-items: center;" >
+                                Name of the Applicant <br>
+                                <input type="text" id="email_address_2" class="form-control" value="AENUGULA KARTHIK">
+                            </div>
+                        </div>
+                           
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-6">
+                                Father Name <br>
+                                <input type="text" id="email_address_2" class="form-control" value="AENUGULA SUBHASH">
+                            </div>
+                            <div class="col-md-6">
+                                Mother Name <br>
+                                <input type="text" id="email_address_2" class="form-control" value="AENUGULA RAMANI">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-6">
+                                Mobile Number <br>
+                                <input type="text" id="email_address_2" class="form-control" value="9963401668">
+                            </div>
+                            <div class="col-md-6">
+                                Email-ID <br>
+                                <input type="text" id="email_address_2" class="form-control" value="aenugula.karthik@gmail.com">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-6">
+                                Date Of Birth <br>
+                                <input type="text" id="email_address_2" class="form-control" value="21-11-1994">
+                            </div>
+                            <div class="col-md-6">
+                                Gender <br>
+                                <input type="text" id="email_address_2" class="form-control" value="Male">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="col-md-12">
+                            <div class="row clearfix center" style="align-items: center;" >
+                               Communication Address <br>
+                               <textarea class="form-control" id="candidateAddress" rows="3" style="height:auto;">D.NO 28-12-2, SURYABAGH, OPP.FIRE STATION, VISAKHAPTNAM-530020
+                               </textarea>
+                            </div>
+                        </div>
+                           
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-6">
+                                Nationality <br>
+                                <input type="text" id="email_address_2" class="form-control" value="Indian">
+                            </div>
+                            <div class="col-md-6">
+                                Religion <br>
+                                <input type="text" id="email_address_2" class="form-control" value="Hindu">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-6">
+                                Community <br>
+                                <input type="text" id="community" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                Physically Handicapped <br>
+                                <input type="text" id="email_address_2" class="form-control" value="No">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-12 textBtwLines generalInformationCss">
+                        <span>Educational Qualification</span>
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-6">
+                                Qualification<br>
+                                <input type="text" id="email_address_2" class="form-control" value="BC">
+                            </div>
+                            <div class="col-md-6">
+                                Stream/Specialization <br>
+                                <input type="text" id="email_address_2" class="form-control" value="No">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-4">
+                                Board/University<br>
+                                <input type="text" id="email_address_2" class="form-control" value="BC">
+                            </div>
+                            <div class="col-md-4">
+                                Passing Year <br>
+                                <input type="text" id="email_address_2" class="form-control" value="No">
+                            </div>
+                            <div class="col-md-4">
+                               Percentage <br>
+                                <input type="text" id="email_address_2" class="form-control" value="No">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-12 textBtwLines generalInformationCss">
+                        <span>Course Information</span>
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-6">
+                                Course<br>
+                                <input type="text" id="email_address_2" class="form-control" value="BC">
+                            </div>
+                            <div class="col-md-6">
+                                Course Category <br>
+                                <input type="text" id="email_address_2" class="form-control" value="No">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-6">
+                                Stream/Specialization<br>
+                                <input type="text" id="email_address_2" class="form-control" value="BC">
+                            </div>
+                            <div class="col-md-6">
+                                Duration <br>
+                                <input type="text" id="email_address_2" class="form-control" value="No">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-md-12 textBtwLines generalInformationCss">
+                        <span>Documents</span>
+                    </div>
+                    <div class="col-md-12 centerDetailsCss">
+                        <div class="row clearfix">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class="row clearfix">
+                                    <br>
+                                    <div class="col-md-4">
+                                        <h5 style="text-decoration: underline;">Photo:</h5> 
+                                        <a href="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Photo.jpeg" target="_blank">
+                                            <img src="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Photo.jpeg" width="150px" height="180px">
+                                        </a>
+                                        <br>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5 style="text-decoration: underline;">Aadhaar:</h5> 
+                                        <a href="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Aadhaar.jpeg" target="_blank">
+                                            <img src="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Aadhaar.jpeg" width="150px" height="180px">
+                                            </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5 style="text-decoration: underline;">Educational Certificates:</h5> 
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\10th Certificate.pdf" target="_blank">
+                                                    10th Certificate
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Intermedicate.pdf" target="_blank">
+                                                    Intermediate Certificate
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\btec-cmm.pdf" target="_blank">
+                                                    B.Tech CMM
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Btec-pc.pdf" target="_blank">
+                                                    B.Tech PC
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>  
+                    <div class="col-md-12 btnWidth">
+                        <div class="row clearfix center" style="align-items: center;" >
+                            <div class="col-md-3">
+                                <button type="button"  class="btn btn-raised bg-indigo waves-effect editApplicationBtn"> 
+                                    <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Edit Student Details</span>
+                                </button>
+                            </div>
+                            <div class="col-md-3 jsdemo-notification-button">
+                                <button type="button"  class="btn btn-raised bg-indigo waves-effect verifyDocumentsBtn" style="display: none;" 
+                                data-placement-from="bottom" data-placement-align="center" data-animate-enter="" data-animate-exit="" data-animate-text="Details Updated" data-color-name="alert-success"> 
+                                    <i class="material-icons">verified_user</i>&nbsp;&nbsp;&nbsp;<span>Update Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="col-md-12 textBtwLines generalInformationCss">
+                        <span>FOR OFFICE USE ONLY</span>
+                    </div><br><br>
+                    <ul class="list-group btnWidth" style="width: 100%;margin-top: 20px;">
+                        <li class="list-group-item">
+                            <div class="col-md-12">
+                                <h5>Candidate Information</h5>
+                                <div class="col-md-12 row clearfix">
+                                    <div class="col-md-10">
+                                        <table class="table table-striped table-bordered courseTable table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 25%;">Register No.</td>
+                                                    <td>REG1234</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Membership No.</td>
+                                                    <td>MEM1234</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Name of the Candidate</td>
+                                                    <td>MEM1234</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Father Name</td>
+                                                    <td>MEM1234</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Date of Birth</td>
+                                                    <td>MEM1234</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Course Category</td>
+                                                    <td>MEM1234</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Course Name</td>
+                                                    <td>MEM1234</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Stream/Specialization</td>
+                                                    <td>MEM1234</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Duration</td>
+                                                    <td>2018-2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Admission Month</td>
+                                                    <td>June-2018</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Completion Month</td>
+                                                    <td>April-2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">Entry Mode</td>
+                                                    <td>Regular</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%;">ACC Name</td>
+                                                    <td>ALI'S EDUCATIONAL ACADEMY</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img src="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Photo.jpeg" class="imagePhoto">
+                                        <hr style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item"> 
+                            <div class="col-md-12">
+                                <h5>Issue ID Card</h5>
+                                <div class="row clearfix"  style="align-items: center;">
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Generate ID Card</span>
+                                    </button></div>
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3">View-1</div>
+                                    <div class="col-md-3">View-2</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item"> 
+                            <div class="col-md-12">
+                                <h5>Assign Examinations</h5>
+                                <div class="row clearfix"  style="align-items: center;">
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect" id="semAssignExams"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-1</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-2</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-3</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-4</span>
+                                    </button></div>
+                                </div>
+                                <div class="row clearfix"  style="align-items: center;">
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-5</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-6</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-7</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-8</span>
+                                    </button></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="col-md-12">
+                                <h5>Generate Results</h5>
+                                <div class="row clearfix"  style="align-items: center;">
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect" id="semester1Marks"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-1</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-2</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-3</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-4</span>
+                                    </button></div>
+                                </div>
+                                <div class="row clearfix"  style="align-items: center;">
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-5</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-6</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-7</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>SEMESTER-8</span>
+                                    </button></div>
+                                </div><br>
+                                <h5>Generate Documents</h5>
+                                <div class="row clearfix"  style="align-items: center;">
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>CMM</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>PC</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>OD</span>
+                                    </button></div>
+                                    <div class="col-md-3">  <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>MEMBERSHIP CERITIFCATE</span>
+                                    </button></div>
+                                </div>
+                                <div class="row clearfix"  style="align-items: center;">
+                                    <div class="col-md-3"><button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>TC / MIGRATION</span>
+                                    </button></div>
+                                    <div class="col-md-3"><button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>BONAFIDE</span>
+                                    </button></div>
+                                    <div class="col-md-3"><button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>TRANSCRIPTS</span>
+                                    </button></div>
+                                    <div class="col-md-3"><button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>LOR & MOI</span>
+                                    </button></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="col-md-12">
+                                <h5>Overall Student Status:</h5> <select class="form-control show-tick" style="margin: 0px 0px 5px 0px">
+                                    <option value="">-- Please select --</option>
+                                    <option value="10">On-Going</option>
+                                    <option value="20">Mark as Completed</option>
+                                </select>
+                                <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                    <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Submit</span>
+                                </button>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+           
+        </div>
+    </div>
+</section>
+<!-- main content -->
+<div class="modal fade" id="largeModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document" style="max-width: 1300px;">
+        <div class="col-md-12">
+            <div class="modal-content">
+                <div class="col-md-12 modalTitleDiv">
+                    <h4 class="modal-title" id="largeModalLabel">Semester-1</h4>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-12" style="align-items: center;">
+                        <table class="table table-striped table-bordered courseTable table-hover" style="text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 130px;text-align: center;">Subject Code</th>
+                                    <th style="width: 400px;text-align: left;">Subject Name</th>
+                                    <th style="width: 130px;text-align: center;">Assign Exam</th>
+                                    <th style="width: 130px;text-align: center;">Date of Issue</th>
+                                    <th style="width: 130px;text-align: center;">Exam Status</th>
+                                    <th style="width: 180px;text-align: center;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: middle;text-align: center;">SUB001</td>
+                                    <td style="vertical-align: middle;text-align: left;">ENGLISH</td>
+                                    <td style="vertical-align: middle;text-align: center;"><button type="button" style="height: 35px !important;font-size: 14px !important;"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Assign</span>
+                                    </button></td>
+                                    <td style="vertical-align: middle;text-align: center;">27-12-2023</td>
+                                    <td style="vertical-align: middle;text-align: center;"><button type="button" style="height: 35px !important;font-size: 14px ;" class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Completed</span>
+                                    </button></td>
+                                    <td>
+                                        <div class="row clearfix">
+                                            <div class="col-md-12">
+                                                <select class="form-control show-tick" style="margin: 0px 0px 5px 0px">
+                                                    <option value="">-- Please select --</option>
+                                                    <option value="10">ReAssign Examination</option>
+                                                    <option value="20">Mark as Completed</option>
+                                                </select>
+                                                <button type="button" style="height: 35px !important;font-size: 14px;" class="btn btn-raised bg-indigo waves-effect"> 
+                                                    <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Submit</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: middle;text-align: center;">SUB001</td>
+                                    <td style="vertical-align: middle;text-align: left;">ENGLISH</td>
+                                    <td style="vertical-align: middle;text-align: center;"><button type="button" style="height: 35px !important;font-size: 14px !important;"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Assign</span>
+                                    </button></td>
+                                    <td style="vertical-align: middle;text-align: center;">27-12-2023</td>
+                                    <td style="vertical-align: middle;text-align: center;"><button type="button" style="height: 35px !important;font-size: 14px ;" class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Completed</span>
+                                    </button></td>
+                                    <td>
+                                        <div class="row clearfix">
+                                            <div class="col-md-12">
+                                                <select class="form-control show-tick" style="margin: 0px 0px 5px 0px">
+                                                    <option value="">-- Please select --</option>
+                                                    <option value="10">ReAssign Examination</option>
+                                                    <option value="20">Mark as Completed</option>
+                                                </select>
+                                                <button type="button" style="height: 35px !important;font-size: 14px;" class="btn btn-raised bg-indigo waves-effect"> 
+                                                    <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Submit</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: middle;text-align: center;">SUB001</td>
+                                    <td style="vertical-align: middle;text-align: left;">ENGLISH</td>
+                                    <td style="vertical-align: middle;text-align: center;"><button type="button" style="height: 35px !important;font-size: 14px !important;"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Assign</span>
+                                    </button></td>
+                                    <td style="vertical-align: middle;text-align: center;">27-12-2023</td>
+                                    <td style="vertical-align: middle;text-align: center;"><button type="button" style="height: 35px !important;font-size: 14px ;" class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Completed</span>
+                                    </button></td>
+                                    <td>
+                                        <div class="row clearfix">
+                                            <div class="col-md-12">
+                                                <select class="form-control show-tick" style="margin: 0px 0px 5px 0px">
+                                                    <option value="">-- Please select --</option>
+                                                    <option value="10">ReAssign Examination</option>
+                                                    <option value="20">Mark as Completed</option>
+                                                </select>
+                                                <button type="button" style="height: 35px !important;font-size: 14px;" class="btn btn-raised bg-indigo waves-effect"> 
+                                                    <i class="material-icons">edit</i>&nbsp;&nbsp;&nbsp;<span>Submit</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="semesterModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document" style="max-width: 1300px;">
+        <div class="col-md-12">
+            <div class="modal-content">
+                <div class="col-md-12 modalTitleDiv">
+                    <h4 class="modal-title" id="largeModalLabel">Semester-1</h4>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-12" style="align-items: center;">
+                        <div class="col-md-12 row clearfix">
+                                <table class="table table-striped table-bordered courseTable table-hover" style="text-align: center;">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 130px;text-align: center;">Subject Code</th>
+                                        <th style="width: 400px;text-align: left;">Subject Name</th>
+                                        <th style="width: 130px;text-align: center;">Internal Marks</th>
+                                        <th style="width: 130px;text-align: center;">External Marks</th>
+                                        <th style="width: 130px;text-align: center;">Total Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align: middle;text-align: center;">SUB001</td>
+                                        <td style="vertical-align: middle;text-align: left;">ENGLISH</td>
+                                        <td><input type="text" class="form-control internalMarks" placeholder="Enter Internal Marks"></td>
+                                        <td><input type="text" class="form-control externalMarks" placeholder="Enter External Marks"></td>
+                                        <td><input type="text" class="form-control totalMarks" placeholder="Total Marks" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle;text-align: center;">SUB001</td>
+                                        <td style="vertical-align: middle;text-align: left;">ENGLISH</td>
+                                        <td><input type="text" class="form-control internalMarks" placeholder="Enter Internal Marks"></td>
+                                        <td><input type="text" class="form-control externalMarks" placeholder="Enter External Marks"></td>
+                                        <td><input type="text" class="form-control totalMarks" placeholder="Total Marks" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle;text-align: center;">SUB001</td>
+                                        <td style="vertical-align: middle;text-align: left;">ENGLISH</td>
+                                        <td><input type="text" class="form-control internalMarks" placeholder="Enter Internal Marks"></td>
+                                        <td><input type="text" class="form-control externalMarks" placeholder="Enter External Marks"></td>
+                                        <td><input type="text" class="form-control totalMarks" placeholder="Total Marks" disabled></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle;text-align: center;">SUB001</td>
+                                        <td style="vertical-align: middle;text-align: left;">ENGLISH</td>
+                                        <td><input type="text" class="form-control internalMarks" placeholder="Enter Internal Marks"></td>
+                                        <td><input type="text" class="form-control externalMarks" placeholder="Enter External Marks"></td>
+                                        <td><input type="text" class="form-control totalMarks" placeholder="Total Marks" disabled></td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                        </div>
+                        <div class="col-md-12 row clearfix">
+                            <div class="col-md-4">
+                                
+                            </div>
+                            <div class="col-md-4">
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <table class="table table-striped table-bordered courseTable table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td>Secured Marks</td>
+                                            <td>250</td>
+                                        </tr> 
+                                        <tr>
+                                            <td>Total Marks</td>
+                                            <td>350</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Percentage</td>
+                                            <td>55%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-12 row clearfix">
+                            <div class="col-md-5 row clearfix">
+                                <div class="col-md-6">
+                                    <button type="button"  class="btn btn-raised bg-indigo waves-effect" style="width: 100%;"> 
+                                        <i class="material-icons" style="color: white;">edit</i>&nbsp;&nbsp;&nbsp;<span style="color: white;font-family: Arial;font-weight: 600;">Upload Results</span>
+                                    </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button"  class="btn btn-raised bg-indigo waves-effect"> 
+                                        <i class="material-icons" style="color: white;">edit</i>&nbsp;&nbsp;&nbsp;<span style="color: white;font-family: Arial;font-weight: 600;">Generate Marksheet</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <button type="button"  class="btn btn-raised bg-indigo waves-effect" style="margin: 0px 0px 0px 15px;"> 
+                                        <i class="material-icons" style="color: white;">edit</i>&nbsp;&nbsp;&nbsp;
+                                        <span style="color: white;font-family: Arial;font-weight: 600;">Print</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </div>
+                    <br>
+                        
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="color-bg"></div>
+<!-- Jquery Core Js --> 
+<script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="assets/bundles/morphingsearchscripts.bundle.js"></script> <!-- Main top morphing search --> 
+
+<script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js --> 
+<script src="assets/plugins/bootstrap-notify/bootstrap-notify.js"></script> <!-- Bootstrap Notify Plugin Js -->
+<!-- DataTable -->
+<!-- <script src="assets/js/datatables/dataTables.bootstrap4.min.js"></script> -->
+<!-- <script src="assets/js/datatables/jquery.dataTables.min.js"></script> -->
+<!-- DataTable -->
+<script src="assets/js/pages/tables/jquery-datatable.js"></script>
+<script src="assets/bundles/datatablescripts.bundle.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.colVis.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.flash.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.html5.min.js"></script>
+<script src="assets/plugins/jquery-datatable/buttons/buttons.print.min.js"></script>
+
+<script src="assets/plugins/momentjs/moment.js"></script> <!-- Moment Plugin Js --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.1/jquery-ui.min.js"></script>
+<!-- Bootstrap Material Datetime Picker Plugin Js --> 
+<script src="assets/plugins/month-picker/monthpicker.js"></script> 
+<script src="assets/js/pages/ui/notifications.js"></script> <!-- Custom Js --> 
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $("#semester1Marks").click(function(){
+            $("#semesterModal").modal('show');
+        });
+
+        $(".externalMarks").keyup(function(){
+            var internalVal=$(this).closest('tr').find('.internalMarks').val();
+            var externalVal=$(this).closest('tr').find('.externalMarks').val();
+
+            //alert(externalVal)
+            $(this).closest('tr').find('.totalMarks').val(parseInt(internalVal)+parseInt(externalVal));
+        });
+
+        $(".studentApplicationViewCss :input").prop("disabled", true);
+        $(".studentApplicationViewCss :button").prop("disabled", false);
+        $('select').removeAttr('disabled');
+       
+        $('.js-monthpicker').monthpicker({ altFormat: 'MM yy' });
+
+        $(".js-monthpicker").change(function(){
+            //alert(1);
+
+            var admissionMonth=$("#admissionMonth").val();
+            var completionMonth=$("#completionMonth").val();
+
+            if(completionMonth!=null && admissionMonth!=null){
+                var year1=admissionMonth.split(" ")[1];
+                var year2=completionMonth.split(" ")[1];
+
+                $("#duration").val(year1 +"-"+year2);
+            }
+        });
+
+
+       
+        $("#courseTable").on('click','.viewStudent',function(){
+            
+            window.open('studentsviewapplication.html', 'name'); 
+        });
+
+        
+
+        $("#largeModal").on('click','#addPhotoRemark',function(){
+
+            var photoVerifyBtn=$("#largeModal #photoVerifyBtn").css("display");
+            if(photoVerifyBtn=="none"){
+                $("#largeModal #photoVerifiedBtn").hide();
+                $("#largeModal #photoVerifyBtn").show();
+            }
+            $("#photoRemarks").show();
+            $("#photoRemarksSubmit").show();
+            displayEligible();
+        });
+
+        $("#largeModal").on('click','#addAdharRemark',function(){
+            var aadharVerifyBtn=$("#largeModal #aadharVerifyBtn").css("display");
+            if(aadharVerifyBtn=="none"){
+                $("#largeModal #aadharVerifiedBtn").hide();
+                $("#largeModal #aadharVerifyBtn").show();
+            }
+            $("#aadharRemark").show();
+            $("#adharRemarksSubmit").show();
+            displayEligible();
+        });
+
+        $("#largeModal").on('click','#addeduRemark',function(){
+            var eduVerifyBtn=$("#largeModal #eduVerifyBtn").css("display");
+            if(eduVerifyBtn=="none"){
+                $("#largeModal #eduVerifiedBtn").hide();
+                $("#largeModal #eduVerifyBtn").show();
+            }
+            $("#eduRemark").show();
+            $("#eduRemarkButton").show();
+            displayEligible();
+        });
+
+        $("#largeModal").on('click','#photoVerifyBtn',function(){
+            $("#largeModal #photoVerifiedBtn").show();
+            $("#largeModal #photoVerifyBtn").hide();
+            $("#studentStatusError").hide();
+            $("#studentStatusError").html('');
+        });
+        $("#largeModal").on('click','#aadharVerifyBtn',function(){
+            $("#largeModal #aadharVerifiedBtn").show();
+            $("#largeModal #aadharVerifyBtn").hide();
+            $("#studentStatusError").hide();
+                $("#studentStatusError").html('');
+        });
+        $("#largeModal").on('click','#eduVerifyBtn',function(){
+            $("#largeModal #eduVerifiedBtn").show();
+            $("#largeModal #eduVerifyBtn").hide();
+            $("#studentStatusError").hide();
+                $("#studentStatusError").html('');
+        });
+
+
+        $("#largeModal #studentStatus").change(function(){
+            var studentStatus = $("#largeModal #studentStatus").val();
+
+            if(studentStatus=='0'){
+                $("#studentStatusError").show();
+                $("#studentStatusError").html("Please Select Student Status");
+            }else{
+                $("#studentStatusError").hide();
+                $("#studentStatusError").html('');
+            }
+        });
+
+        $("#largeModal").on('click','#certificatesubmitBtn',function(){
+
+            var studentStatus = $("#largeModal #studentStatus").val();
+            var photoVerifyBtn=$("#largeModal #photoVerifyBtn").css("display");
+            var aadharVerifyBtn=$("#largeModal #aadharVerifyBtn").css("display");
+            var eduVerifyBtn=$("#largeModal #eduVerifyBtn").css("display");
+            if(studentStatus=='0'){
+                $("#studentStatusError").show();
+                $("#studentStatusError").html("Please Select Student Status");
+            }else if((studentStatus=='Eligible') && (photoVerifyBtn!="none" || aadharVerifyBtn!="none" || eduVerifyBtn!="none")){
+                $("#studentStatusError").show();
+                $("#studentStatusError").html("Please Verify Photo, Aadhar Card, Educational Certificates");
+            }else{
+                $("#studentStatusError").hide();
+                $("#studentStatusError").html('');
+
+                $("#largeModal").modal('hide');
+
+                if(studentStatus=='Eligible'){
+                    $(".rejectionDiv").hide();
+                    $(".onHoldDiv").hide();
+                    $(".acceptButton").show();
+                }else if(studentStatus=='Not Eligible'){
+                    $(".rejectionDiv").show();
+                    $(".onHoldDiv").hide();
+                    $(".acceptButton").hide();
+                }else if(studentStatus=='On Hold'){
+                    $(".rejectionDiv").hide();
+                    $(".onHoldDiv").show();
+                    $(".acceptButton").hide();
+                }
+               
+
+                
+            }
+           
+        });
+
+
+        $(".acceptButton").click(function(){
+
+            $(".officeOnlyDiv").show();
+            $(".acceptedButton").show();
+            $(".acceptButton").hide();
+        });
+
+
+        $("#registerNo").keyup(function(){
+
+            var val=$("#registerNo").val();
+
+            $("#username").val(val);
+        });
+
+        $(".editApplicationBtn").click(function(){
+            $(this).hide();
+            $(".verifyDocumentsBtn").show();
+            $(".studentApplicationViewCss :input").prop("disabled", false);
+        });
+
+        $(".editApplicationBtn").prop("disabled", false);
+        $(".verifyDocumentsBtn").prop("disabled", false);
+
+        $("#semAssignExams").click(function(){
+            $("#largeModal").modal('show');
+        });
+    });
+</script>
+</body>
+
+</html>

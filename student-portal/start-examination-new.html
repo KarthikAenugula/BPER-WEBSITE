@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>:: Swift - University Admin ::</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../admin/assets/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom Css -->
+     <link rel="stylesheet" href="../admin/assets/css/main.css"> 
+    
+</head>
+
+<body class="ownBody">
+    <section class="otherContent home">
+        <div class="content-bg"></div>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="col-md-12">
+                    <div class="row clearfix col-md-12">
+                        <div class="col-md-1">
+                            <img src="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Photo.jpeg"
+                            width="130px" height="160px">
+                        </div>
+                        <div class="col-md-6 examDivClass">
+                            <table class="table table-striped table-bordered courseTable table-hover examinationTable">
+                                <tbody>
+                                    <tr>
+                                        <td class="tdWidth">Name</td>
+                                        <td>Karthik Aenugula</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdWidth">DOB</td>
+                                        <td>21-11-1994</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdWidth">Course Category</td>
+                                        <td>Graduateship / Associate Membership</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdWidth">Course Name</td>
+                                        <td>Electronics and Communcation Engineering</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-5 examDivClass">
+                            <table class="table table-striped table-bordered courseTable table-hover examinationTable">
+                                <tbody>
+                                    <tr>
+                                        <td class="tdWidth">Semster</td>
+                                        <td>Semester-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdWidth">Subject Code</td>
+                                        <td>SUB001</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdWidth">Subject Name</td>
+                                        <td>PHYSICS</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="col-md-12 clearfix h5Line">
+                        <h5></h5>
+                    </div>
+                    <br>
+                    <div class="row clearfix col-md-12 h5Instructions">
+                        <h5>Instructions</h5>
+                        <ul>
+                            <li>Prospective candidates are required to apply online, carefully following the comprehensive instructions provided when online applications are announced, concurrently with the release of the examination notification.</li>
+                            <li>The online application form can be completed and submitted through the Commission's web portal by the specified deadline for application submissions, as indicated in the Examination Notice.</li>
+                            <li>It is strongly recommended that applicants meticulously review the detailed instructions provided by the Commission at the time of inviting online applications. This ensures that their applications remain free from avoidable issues leading to rejection. </li>
+                            <li>Upon the successful completion of both Part-I and Part-II of the online application process, candidates are required to submit their unique RID (Registration ID) number and date of birth. Subsequently, they should click the "SUBMIT" button to finalize the entire application procedure. </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="col-md-12 clearfix h5Line">
+                        <h5></h5>
+                    </div>
+                    <br>
+                    <div class="row clearfix col-md-12">
+                        <div class="row clearfix col-md-6">
+                            <div class="col-md-4">
+                                <img src="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Photo.jpeg" class="imagePhoto"><br>
+                                <button type="button" class="btn btn-raised bg-indigo waves-effect" id="snap"> 
+                                    <span>Capture Photo</span> &nbsp;&nbsp;&nbsp;<i class="material-icons">add_a_photo</i>
+                                </button> 
+                            </div>
+                            <div class="col-md-8">
+                                <video id="video" width="600" height="300" playsinline="" autoplay=""></video>
+                            </div>
+                        </div>
+                        <div class="row clearfix col-md-6">
+                            <div class="col-md-4">
+                                <img src="J:\Education-newtemplate\student-images\ed38d937-e0ec-4b97-9dc1-733b53ecebe1\Aadhaar.jpeg"
+                                width="150px" height="180px"><br>
+                                <button type="button" class="btn btn-raised bg-indigo waves-effect" id="snap"> 
+                                    <span>Capture Aadhar Card</span> &nbsp;&nbsp;&nbsp;<i class="material-icons">add_a_photo</i>
+                                </button> 
+                            </div>
+                            <div class="col-md-8">
+                                <!-- <video id="video" playsinline autoplay></video> -->
+                                <video id="video-1" width="600" height="300" playsinline="" autoplay=""></video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 clearfix h5Line">
+                        <h5></h5>
+                    </div>
+                    <br>
+                    <div class="row clearfix col-md-12 h5Instructions">
+                        <h5>Declaration</h5>
+                    </div>
+                    <div class="row clearfix col-md-12 h5Instructions">
+                        <textarea class="form-control termsTextAreaClass" id="exampleFormControlTextarea1" rows="5" style="height:auto;" disabled>
+1. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+2. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+3. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+4. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+5. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+6. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+7. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+8. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+                                                            </textarea>
+                    </div>
+                    <br>
+                    <div class="row clearfix col-md-12 h5Instructions">
+                        <div class="col-md-6"><input type="checkbox" id="basic_checkbox_2" class="filled-in">
+                            <label for="basic_checkbox_2">I here by declare</label></div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3 text-right">
+                            <button type="button" class="btn btn-raised bg-indigo waves-effect" id="startExambtn" style="width: 100%;display: none;"> 
+                                <span style="color: white;">Start Examination</span> &nbsp;&nbsp;&nbsp;<i class="material-icons"style="color: white;">keyboard_tab</i>
+                              </button> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+    </section>
+</body>
+<!-- Jquery Core Js --> 
+<script src="../admin/assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="../admin/assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
+<script src="../admin/assets/bundles/morphingsearchscripts.bundle.js"></script> <!-- Main top morphing search --> 
+
+<script src="../admin/assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+<!-- <script src="../admin/assets/plugins/webcam/webcam.js"></script> -->
+<script type="text/javascript">
+   $(document).ready(function(){
+
+    $("#basic_checkbox_2").click(function(){
+            var value=$('#basic_checkbox_2').is(':checked');
+            
+            if(value==true){
+                $("#startExambtn").show();
+            }else{
+                $("#startExambtn").hide();
+            }
+        });
+
+let All_mediaDevices=navigator.mediaDevices
+ if (!All_mediaDevices || !All_mediaDevices.getUserMedia) {
+    console.log("getUserMedia() not supported.");
+    return;
+ }
+ All_mediaDevices.getUserMedia({
+    audio: false,
+    video: true
+ })
+ .then(function(vidStream) {
+    var video = document.getElementById('video');
+    var video1 = document.getElementById('video-1');
+    if ("srcObject" in video) {
+       video.srcObject = vidStream;
+       video1.srcObject = vidStream;
+    } else {
+       video.src = window.URL.createObjectURL(vidStream);
+       video1.src = window.URL.createObjectURL(vidStream);
+    }
+    video.onloadedmetadata = function(e) {
+       video.play();
+    };
+    video1.onloadedmetadata = function(e) {
+       video1.play();
+    };
+ })
+ .catch(function(e) {
+    console.log(e.name + ": " + e.message);
+ });
+
+ const canvas = document.getElementById('canvas');
+ const canvas1 = document.getElementById('canvas-1');
+ var context = canvas.getContext('2d');
+ var context1 = canvas1.getContext('2d');
+ $("#snap").click(function(){
+    context.drawImage(video, 0, 0, 150, 180);
+    $("#video").hide();
+    $("#snap").hide();
+ });
+
+ $("#snap-1").click(function(){
+    context1.drawImage(video, 0, 0, 180, 200);
+    $("#video-1").hide();
+    $("#snap-1").hide();
+ });
+});
+</script>
+
+</html>

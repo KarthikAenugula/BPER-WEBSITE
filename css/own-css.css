@@ -1,0 +1,418 @@
+.progressPClass{
+    color:white;
+    text-align: center!important;
+    margin-top: 5%;
+}
+
+.progressPPClass{
+  color:white;
+  text-align: center!important;
+  margin-top: 4%;
+}
+
+/* Large rounded green border */
+hr.new5 {
+    height: 5px;
+    color: green;
+    background-color: green;
+    border: none;
+  }
+  .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+
+ .space-top{
+  background-color:#e5e5e5;
+ }
+
+
+ .mainDiv{
+  background-color:#ffffff;
+ }
+
+ .mainLogoClass{
+  margin-bottom: 15px;
+  /*margin-top: 25px;*/
+ }
+
+ .instrunctionsClass{
+  text-align: justify;
+  font-family: arial;
+    font-size: 17px;
+    line-height: 26px;
+ }
+
+ .headingDiv{
+  margin-top:20px;
+  margin-bottom: 25px;
+  border: 1px solid;
+  margin-left: 0px;
+    margin-right: 0px;
+    background-color: #2e6b24;
+ }
+
+ .h5Class{
+  margin-top:10px;
+  color: #ffffff;
+  font-family: Arial;
+ }
+
+ .signImageDiv{
+  width:140px;
+  height:60px;
+ }
+
+ .signAadharDiv{
+  width: 180px;
+  height: 200px;
+  padding: 0%;
+    margin: auto;
+ }
+
+ .photoImageDiv{
+  height: 180px;
+  width: 150px;
+  padding: 0%;
+  margin: auto;
+ }
+
+ .tacbox {
+  display:block;
+  padding: 1em;
+  margin: 2em;
+  border: 3px solid #ddd;
+  background-color: #eee;
+  text-align: justify;
+  margin-left:12px;
+}
+
+.agreeCheckbox {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+}
+
+.termsClass{
+  text-align: justify;
+  text-decoration: underline;
+}
+
+.termsTextAreaClass{
+  text-align:left;
+}
+
+.container-fluid{
+  padding:80px;
+}
+
+.center-div{
+  margin-bottom: 100px;
+  margin-top: 0px;
+  padding: 25px;
+}
+
+.border-success{
+  border-top: 7px solid #2e6b24;
+  border-bottom: 47px solid #2e6b24;
+}
+
+.arialFontFamily{
+  font-family: Arial;
+}
+
+.previewFontFamily{
+  font-family: Arial;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.modalFontFamily{
+  font-family: Arial;
+  font-size: 26px;
+}
+
+.progressClass{
+  height: 42px;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.mainH5ClassEnglish{
+  color: #2e6b24;
+    font-family: arial black;
+    font-size: 28px;
+}
+
+.mainH5ClassHindi{
+  color: #e34220;
+    font-family: arial black;
+    font-size: 24px;
+    line-height: 10px;
+}
+
+.progressRow{
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.otp-btn{
+  background-color: #2e6b24;
+}
+
+.validationClass{
+  display:none;
+  color:red;
+}
+
+#input-res-1{
+  padding: 12px;
+}
+
+
+.watermark:after{
+  content: "DRAFT";
+  color: steelblue;
+  font-size: 120px;
+  /* text-align: center; */
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity:0.1
+}
+
+#overlay{	
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height:100%;
+  display: none;
+  background: rgba(0,0,0,0.6);
+}
+.cv-spinner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px #ddd solid;
+  border-top: 4px #2e93e6 solid;
+  border-radius: 50%;
+  animation: sp-anime 0.8s infinite linear;
+}
+@keyframes sp-anime {
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+.header-logo{
+  width: 340px;
+}
+
+.sec-title{
+  font-size: 30px;
+  font-family: arial;
+  text-align: center;
+    text-transform: uppercase;
+}
+
+.previewFontFamilySubCourse{
+  margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    font-style: italic;
+    font-family: arial;
+}
+
+.customBackGroundForImage{
+  background-image: linear-gradient(rgb(46 107 36), rgb(46 107 36)), url(https://themeholy.com/html/edura/demo/assets/img/bg/cta-bg1.png);
+  margin-top: 20px;
+}
+
+.previewFontFamilyItalic{
+  font-family: Arial;
+  font-size: 17px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.notificationClass{
+  background-color: #2e6b24;
+  color: #efefef;
+}
+
+.card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card{
+  border-radius: 0px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+padding: 10px 25px 30px 15px;;
+cursor: pointer;
+}
+
+.swiper-container {
+  width: 90vw;
+  height: 100vh;
+/*     background: #fd5; */
+}
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.liClass{
+  margin-bottom: 16px;
+  font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.courseFinder{
+  background-image: linear-gradient(rgb(46 107 36), rgb(46 107 36)), url(https://themeholy.com/html/edura/demo/assets/img/bg/course_bg_1.png);
+}
+
+.elementor-icon-list-icon{
+padding: 40px 10px 0px 0px;
+color: #2e6b24;
+}
+
+.card-1{
+  padding: 40px 20px 30px 0px;
+}
+
+
+/* li:not(:last-of-type) {
+  border-bottom: 2px solid #e7e7e7;
+} */
+
+.findCourseClass{
+  background: #161871;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 0px;
+    width: 100%;
+}
+
+.findCourseClass:hover{
+  background: #e23815;
+}
+
+
+
+.doubleBorders {
+  position: relative;
+  z-index: 10;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #2e6b24;
+}
+
+.doubleBorders:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 5px solid #2e6b24;
+}
+
+.onlineApplicationFormH5English{
+  color: #2e6b24;
+  font-family: arial black;
+  font-size: 26px;
+  text-align: center;
+}
+
+.onlineApplicationFormH5Hindi{
+  color: #e34220;
+    font-family: arial black;
+    font-size: 25px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.headerFormPClass{
+  font-weight: bold;
+  text-align: center;
+  line-height: 4px;
+  font-family: arial black;
+  font-size: 14px;
+}
+
+.straightLineHR{
+    display: block;
+    border: 0;
+    border-top: 5px solid #2e6b24;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.officeOnly{
+  text-align: center;
+  text-decoration: underline;
+  font-family: Arial;
+}
+
+.checkboxForm{
+  width: 140px;
+  float: left;
+}
+
+.checkboxFormFloat{
+  float: left;
+}
+
+.admissionRow{
+  color: #2e6b24;
+  text-decoration: underline;
+  font-family: Arial;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.formMargin{
+  margin-top: 10px;;
+}
+
+.marginLeftForm{
+  padding-left: 4px;
+}
+/*@media only screen and (max-width: 990px) {
+.img-responsive{
+  width: 200px;
+}
+}
+
+@media only screen and (min-width: 1000px) {
+  .img-responsive{
+    width: 40%;
+  }
+  }*/
+  
+
+  

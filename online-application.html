@@ -1,0 +1,1830 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Online Application - Board of Professional Education and Research</title>
+    <meta name="author" content="themeholy">
+    <meta name="description" content="Edura - Online Courses & Education HTML Template">
+    <meta name="keywords" content="Edura - Online Courses & Education HTML Template">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/logo-bper.png">
+    
+    
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" href="img/logo-bper.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Jost:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/own-css.css">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/yearpicker.css">
+    <link rel="stylesheet"  href="css/datepicker.css">
+    <!-- <link href = "https://code.jquery.com/ui/1.13.2/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet"> -->
+    
+</head>
+
+<body>
+    <div class="space-top">
+        <input type="hidden" class="folderPath">
+        <input type="hidden" class="previousFile">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 center-div">
+                <div class="col-md-12 mainDiv">
+                    <form id="onlineApplicationForm">
+                    <div class="container-fluid border border-success">
+                        <div class="container mainLogoClass">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="img/online-icon.png" class="img-responsive center-block d-block mx-auto"
+                                        alt="Sample Image" style="width:20%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <h5 class="mainH5ClassEnglish">BOARD OF PROFESSIONAL EDUCATION AND RESEARCH  <br>STUDENT ONLINE APPLICATION</h5>
+                             <h5 class="mainH5ClassHindi">बोर्ड ऑफ़ प्रोफेशनल एजुकेशन एंड रीसर्च - स्टूडेंट ऑनलाइन एप्लीकेशन</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="progress progressClass" style="height: 30px;">
+                                    <div class="progress-bar bg-success progressText" role="progressbar" style="width: 50%;"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        <p class="text-start progressPClass">Step-1 of Step-2</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="col-md-2 arialFontFamily">
+                                    <b>Instructions:</b>
+                                </div>
+                                <div class="col-md-12 instrunctionsClass">
+                                    <ul>
+                                        <li><small>Prospective candidates are required to apply online, carefully following the comprehensive instructions provided when online applications are announced, concurrently with the release of the examination notification.</small></li>
+                                        <li><small>The online application form can be completed and submitted through the Commission's web portal by the specified deadline for application submissions, as indicated in the Examination Notice.</small></li>
+                                        <li><small>It is strongly recommended that applicants meticulously review the detailed instructions provided by the Commission at the time of inviting online applications. This ensures that their applications remain free from avoidable issues leading to rejection. </small></li>
+                                        <li><small>Upon the successful completion of both Part-I and Part-II of the online application process, candidates are required to submit their unique RID (Registration ID) number and date of birth. Subsequently, they should click the "SUBMIT" button to finalize the entire application procedure. </small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-2 photoImageDiv" style="outline: 1px solid green;">
+                                <div class="col-md-12">
+                                    <div class="text-center" id="photoDiv">
+                                        <!--<div class="p-2 m-2">Upload Photo <br>(150px X 180px)</div>-->
+                                        <br><br>
+                                        <p class = "text-center">Upload Photo <br>(150px X 180px) <br> <b>jpeg, jpg</b> Allowed</p>
+                                    </div>
+                                    <img id="image-preview" class="photoImageDiv" src="#" alt="Image Preview" style="display: none;" />
+                                    <input type="file" name="image" id="image" src="">
+                                </div>
+                                <br><div class="col-md-12">
+                                    <small id="errorPhoto" class="validationClass"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <hr class="new5">
+                            </div>
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">General Information</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row candidateFullNameDiv">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="candidateFullName"
+                                        placeholder="Candidate Full Name" autocomplete="off">
+                                    <small id="candidateFullNameError" class="validationClass"></small>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row fatherNameDiv">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="fatherName" placeholder="Father Name" autocomplete="off">
+                                    <small id="fatherNameError" class="validationClass"></small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="motherName" placeholder="Mother Name" autocomplete="off">
+                                    <small id="motherNameError" class="validationClass"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mobileNumberDiv">
+                            <input type="hidden" id="mobileVerified" value="unverified">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" id="mobileNumber"
+                                            placeholder="Mobile Number" maxlength="10" autocomplete="off">
+                                        <small id="mobileNumberError" class="validationClass"></small>
+                                    </div>
+                                    <div class="col-md-3" id="submitOTPDiv">
+                                        <button type="button" class="btn btn-success btn-sm p-3 otp-btn" id="sendOTP"> <i class="far fa-envelope"></i> Send OTP</button>
+                                    </div>
+                                    <div class="col-md-3" style="display: none;" id="verifyOTPDiv">
+                                        <button type="button" class="btn btn-success btn-sm p-3 otp-btn" id="verified"> <i class="far fa-check"></i> &nbsp;Verified</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="emailId"
+                                        placeholder="Candidate Email-ID" autocomplete="off">
+                                    <small id="emailIdError" class="validationClass"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row dobDiv">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="dob" placeholder="Date of Birth" autocomplete="off">
+                                    <small id="dobError" class="validationClass"></small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-select" aria-label="Select Gender" id="gender">
+                                        <option value="0" disabled="" selected="selected">Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Transgender">Transgender</option>
+                                    </select>
+                                    <small id="genderError" class="validationClass"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row candidateAddressDiv">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="form-outline">
+                                        <textarea class="form-control" id="candidateAddress" rows="3" style="height:auto;" placeholder="Communication Address"></textarea>
+                                        <small id="candidateAddressError" class="validationClass"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row nationalityDiv">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-select" aria-label="Select Nationality" id="nationality">
+                                        <option value="0" disabled="" selected="selected">Nationality</option>
+                                        <option value="Indian">Indian</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                    <small id="nationalityError" class="validationClass"></small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-select" aria-label="Select Religion" id="religion">
+                                        <option value="0" disabled="" selected="selected">Religion</option>
+                                        <option value="Hindu">Hindu</option>
+                                        <option value="Muslim">Muslim</option>
+                                        <option value="Christian">Christian</option>
+                                        <option value="Sikhs">Sikhs</option>
+                                        <option value="Jains">Jains</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                    <small id="religionError" class="validationClass"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row communityDiv">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-select" aria-label="Select Community" id="community">
+                                        <option value="0" disabled="" selected="selected">Community</option>
+                                        <option value="OC">OC</option>
+                                        <option value="OBC">OBC</option>
+                                        <option value="BC">BC</option>
+                                        <option value="SC">SC</option>
+                                        <option value="ST">ST</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                    <small id="communityError" class="validationClass"></small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-select" aria-label="Physically Handicapped" id="handicapped">
+                                        <option value="0" disabled="" selected="selected">Physically Handicapped</option>
+                                        <option value="OC">Yes</option>
+                                        <option value="OBC">No</option>
+                                    </select>
+                                    <small id="handicappedError" class="validationClass"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">Educational Qualification</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row qualificationDiv">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-select" aria-label="Select Qualification" id="qualification">
+                                        <option value="0" disabled="" selected="selected">Qualification</option>
+                                        <option value="10th / Equivalent">10th / Equivalent</option>
+                                        <option value="12th / Equivalent">12th / Equivalent</option>
+                                        <option value="Diploma Engineering / Equivalent">Diploma Engineering / Equivalent</option>
+                                        <option value="UG Examinations/ Equivalent(BA / B.Com / B.Sc / BBA / BCA)">
+                                            UG Examinations/ Equivalent(BA / B.Com / B.Sc / BBA / BCA)</option>
+                                        <option value="UG Examinations / Equivalent(B.E / B.Tech)">
+                                            UG Examinations / Equivalent(B.E / B.Tech)</option>
+                                        <option value="PG Examinations / Equivalent(MA / M.Com / M.Sc / MBA / MCA)">
+                                            PG Examinations / Equivalent(MA / M.Com / M.Sc / MBA / MCA)</option>
+                                        <option value="PG Examinations / Equivalent(M.E / M.Tech)">
+                                            PG Examinations / Equivalent(M.E / M.Tech)</option>
+                                    </select>
+                                    <small id="qualificationError" class="validationClass"></small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="stream"
+                                        placeholder="Stream/Specialization" autocomplete="off">
+                                    <small id="streamError" class="validationClass"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row universityDiv">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="university"
+                                        placeholder="Board/University" autocomplete="off">
+                                    <small id="universityError" class="validationClass"></small>    
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="yearpicker form-control" id="yearofpassing"
+                                        placeholder="Year of Passing" autocomplete="off">
+                                    <small id="yearofpassingError" class="validationClass"></small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="percentage" placeholder="Percentage" autocomplete="off">
+                                    <small id="percentageError" class="validationClass"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">Course Information</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row courseSelectDiv">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-select" id="courseSelect"></select>
+                                    <small id="courseError" class="validationClass"></small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-select"  id="courseCategory" style="display:none;"></select>
+                               <small id="courseCategoryError" class="validationClass"></small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <select class="form-select"  id="courseStream" style="display:none;"></select>
+                                <small id="courseStreamError" class="validationClass"></small>
+                            </div>
+                            <div class="col-md-6" id="durationSelectDiv">
+                                <select class="form-select" id="durationSelect" style="display:none;"></select>
+                                <small id="durationError" class="validationClass"></small>
+                            </div>
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">Upload Documents</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row aadharImageDiv">
+                            <div class="col-md-4 arialFontFamily">
+                                <div class="col-md-4">Aadhaar:</div><br>
+                                <div class="col-md-8">
+                                    <div class="col-md-12 signAadharDiv" style="outline: 1px solid green;">
+                                        <div class="text-center" id="aadharDiv">
+                                            <br><br>
+                                            <p class = "text-center">Upload Aadhaar <br> (180px X 200px)</p>
+                                        </div>
+                                        <img id="image-preview-aadhar" class="signAadharDiv" alt="Image Preview" style="display: block;" />
+                                        <input type="file" name="image" id="aadharImage">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-12"> <small id="errorAdharPhoto" class="validationClass"></small></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="col-md-12 arialFontFamily">
+                                    <div class="col-md-12">Educational Certificates: <br>(Each Less than 2mb, Only jpeg, jpg, pdf are allowed)</div><br>
+                                    <div class="col-md-12">
+                                        <div class="file-loading">
+                                            <input id="input-res-1" name="input-res-1" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" id="educationDiv">
+                                        
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-12"> <small id="educationalFileError" class="validationClass"></small></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 arialFontFamily">
+                                <div class="col-md-4">Signature:</div><br>
+                                <div class="col-md-8">
+                                    <div class="col-md-12 signImageDiv d-inline-block" style="outline: 1px solid green;">
+                                        <div class="align-items-center justify-content-center" id="signDiv">
+                                            <div class="p-2">Upload Signature  <br> (140px X 60px) </div>
+                                        </div>
+                                        <img id="image-preview-sign" class="signImageDiv" src="#" alt="Image Preview" style="display: block;" />
+                                        <input type="file" name="image" id="signImage">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-12"> <small id="errorSignPhoto" class="validationClass"></small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:30px;">
+                            
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">Terms and Conditions</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea class="form-control termsTextAreaClass" id="exampleFormControlTextarea1" rows="5" style="height:auto;">
+1. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+2. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+3. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+4. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+5. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+6. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+7. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+8. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 40px;">
+                            <div class="col-md-9">
+                                <input id="checkbox" type="checkbox" class="agreeCheckbox"/>
+                                <label for="checkbox"> I hereby declare that the information given above and in the enclosed documents is
+                                    true to the best of my knowledge and belief and nothing has been concealed therein.
+                                </label>
+                            </div>
+                            <div class="col-md-3" id="step2Div" style="display: none;">
+                                <div class="col-md-12">
+                                    <button type="button" id="previewBtn" class="btn btn-success float-end btn-lg" style="background-color: #2e6b24"><i class="far fa-eye"></i> Preview</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--<div class="row" style="margin-top: 10%;display:none;" >
+                            <div class="col-md-3">
+            
+                            </div>
+                            <div class="col-md-6 text-center" style="margin-bottom:20px;">
+                                
+                            </div>
+                            <div class="col-md-1">
+            
+                            </div>
+                        </div>-->
+            
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        
+    </div> 
+    
+    <footer class="footer-wrapper footer-layout1">
+        
+       
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-contact-wrap">
+                    <div class="footer-contact">
+                        <div class="footer-contact_icon icon-btn"><i class="fal fa-phone"></i></div>
+                        <div class="media-body">
+                            <p class="footer-contact_text">Call us any time:</p><a href="tel+04447792999"
+                                class="footer-contact_link">044-47792999​</a>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="footer-contact">
+                        <div class="footer-contact_icon icon-btn"><i class="fal fa-envelope"></i></div>
+                        <div class="media-body">
+                            <p class="footer-contact_text">Email us 24/7 hours:</p><a href="mailto:info@edura.com"
+                                class="footer-contact_link">info@bper.org.in</a>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="footer-contact">
+                        <div class="footer-contact_icon icon-btn"><i class="fal fa-location-dot"></i></div>
+                        <div class="media-body">
+                            <p class="footer-contact_text">Our university location:</p><a
+                                href="https://maps.app.goo.gl/fKgGa4zgbZsGnpRR8" target="_blank" class="footer-contact_link">New No:31, Old No:14, 1st Floor, Rear Building, Sait Colony 1st Street, Egmore, Chennai-600008</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrap">
+            <div class="widget-area">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6 col-xxl-3 col-xl-3">
+                            <div class="widget footer-widget">
+                                <div class="th-widget-about">
+                                    <div class="about-logo"><a href="index.html"><img src="img/main-logo.png"
+                                                alt="Edura"></a></div>
+                                    <div class="th-social">
+                                        <h6 class="title text-white">FOLLOW US ON:</h6>
+                                        <a target="_blank" href="https://www.instagram.com/board_of_professional_edu_res/"><i class="fab fa-instagram"></i></a> 
+                                        <a target="_blank" href="https://twitter.com/bperglobal"><i class="fab fa-twitter"></i></a> 
+                                        <a target="_blank" href="https://www.linkedin.com/in/board-of-professional-education-and-research-425b54292/"><i class="fab fa-linkedin-in"></i></a> 
+                                        <a target="_blank" href="https://wa.me/message/IQAB33YGA6NGO1"><i class="fab fa-whatsapp"></i></a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-auto">
+                            <div class="widget widget_nav_menu footer-widget">
+                                <h3 class="widget_title">Quick Links</h3>
+                                <div class="menu-all-pages-container">
+                                    <ul class="menu" style="list-style-type: none;">
+                                        <li><a href="https://bper.org.in/bper-corporate-associate-membership">
+                                            <span class="elementor-icon-list-icon">
+                                            <span class="elementor-icon-list-text">Corporate Associate Membership</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon"></span>
+                                            <span class="elementor-icon-list-text">Institutional Membership</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon">
+                                             <span class="elementor-icon-list-text">Student Membership</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-auto">
+                            <div class="widget widget_nav_menu footer-widget">
+                                <h3 class="widget_title">Courses</h3>
+                                <div class="menu-all-pages-container">
+                                    <ul class="menu" style="list-style-type: none;">
+                                        <li><a href="https://bper.org.in/bper-corporate-associate-membership">
+                                            <span class="elementor-icon-list-icon">
+                                            <span class="elementor-icon-list-text">UG Courses</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon"></span>
+                                            <span class="elementor-icon-list-text">PG Courses</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon">
+                                             <span class="elementor-icon-list-text">Diploma Engg Courses</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon">
+                                             <span class="elementor-icon-list-text">Vocational Courses</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-auto">
+                            <div class="widget widget_nav_menu footer-widget">
+                                <h3 class="widget_title">Logins</h3>
+                                <div class="menu-all-pages-container">
+                                    <ul class="menu">
+                                        <li><a href="contact.html">ACC Login</a></li>
+                                        <li><a href="contact.html">Staff Login</a></li>
+                                        <li><a href="contact.html">Admin Login</a></li>
+                                        <li><a href="contact.html">Email Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xxl-3 col-xl-3">
+                            <div class="widget newsletter-widget footer-widget">
+                                <h3 class="widget_title">Get in touch!</h3>
+                                <p class="footer-text">Subscribe our newsletter to get our latest Update & news</p>
+                                <form class="newsletter-form form-group"><input class="form-control" type="email"
+                                        placeholder="Email Email" required=""> <i class="far fa-envelope"></i> <button
+                                        type="submit" class="th-btn style3">Subscribe Now <i
+                                            class="far fa-arrow-right ms-1"></i></button></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright-wrap">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6">
+                            <p class="copyright-text">Copyright © 2023 <a href="index.html">BPER</a> All Rights
+                                Reserved.</p>
+                        </div>
+                        <div class="col-md-6 text-end d-none d-md-block">
+                            <div class="footer-links">
+                                <ul>
+                                    <li><a href="about.html">Privacy Policy</a></li>
+                                    <li><a href="about.html">Terms & Condition</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll-top"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg></div>
+
+        <input type="hidden" class="ipaddress" id="ipaddress">
+
+        <!-- Modal -->
+<div class="modal fade" id="otpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-bs-backdrop="static" >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Verify Mobile Number</h5>
+         </div>
+        <div class="modal-body">
+            <div class="d-flex justify-content-center align-items-center container">
+                <div class="card py-5 px-3">
+                    <small id="otpError" class="validationClass" style="display: none;"></small>
+                    <span class="mobile-text">Enter the otp we just send on your phone number <b class="text-danger" id="mobileNumberModal"></b></span>
+                    <div class="d-flex flex-row mt-5">
+                        <input type="text" class="form-control" pattern="\d*" autofocus="" id="otp1" maxlength="1" autocomplete="off">
+                        <input type="number" class="form-control" id="otp2" maxlength="1" autocomplete="off">
+                        <input type="number" class="form-control" id="otp3" maxlength="1" autocomplete="off">
+                        <input type="number" class="form-control" id="otp4" maxlength="1" autocomplete="off">
+                    </div>
+                    <div class="text-center mt-5"><span class="d-block mobile-text">Didn't received the code?</span><span class="font-weight-bold text-danger cursor resendClick">Resend</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" id="verifyOtp" disabled>Verify</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="overlay">
+    <div class="cv-spinner">
+      <span class="spinner"></span>
+    </div>
+  </div>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="js/app.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+        <script src="js/yearpicker.js"></script>
+        <script src = "https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $.getJSON("http://ipinfo.io", function (data) {
+
+                    $("#ipaddress").val(data.ip);
+
+                });
+
+                // Read a page's GET URL variables and return them as an associative array.
+                function getUrlVars()
+                {
+                    var vars = [], hash;
+                    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                    for(var i = 0; i < hashes.length; i++)
+                    {
+                        hash = hashes[i].split('=');
+                        vars.push(hash[0]);
+                        vars[hash[0]] = hash[1];
+                    }
+                    return vars;
+                }
+
+                var preview_id = getUrlVars()["preview_id"];
+                if(preview_id=='' || preview_id==null || preview_id=='undefined'){
+                }else{
+                    $.getJSON("http://localhost:8081/bper-online/fetchSubmitApplications?preview_id="+preview_id, function (listSize) {
+                    if(listSize!=0){
+                      window.location.replace("online-application.html");
+                     }else{
+                        $.getJSON("http://localhost:8081/bper-online/retreivePreview?preview_id="+preview_id, function (data) {
+                        $("#candidateFullName").val(data.candidate_full_name);
+                        $("#fatherName").val(data.father_name);
+                        $("#motherName").val(data.mother_name);
+                        $("#mobileNumber").val(data.mobile_number);
+                        $("#verified").val(data.mobile_number_verified);
+                        $("#emailId").val(data.email_id);
+                        $("#dob").val(data.dob);
+                        $("#gender").val(data.gender);
+                        $("#candidateAddress").val(data.communication_address);
+                        $("#nationality").val(data.nationality);
+                        $("#religion").val(data.religion);
+                        $("#community").val(data.community);
+                        $("#handicapped").val(data.handicapped);
+                        $("#qualification").val(data.qualification);
+                        $("#stream").val(data.stream);
+                        $("#university").val(data.university);
+                        $("#yearofpassing").val(data.yearofpassing);
+                        $("#percentage").val(data.percentage);
+
+                        $("#submitOTPDiv").hide();
+                        $("#verifyOTPDiv").show();
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchCoursesId?mainCourseId="+data.course_select, function (resp) {
+                            $("#courseSelect").val(resp.course_id);
+                        });
+
+                        $("#courseCategory").show();
+                        $.getJSON("http://localhost:8081/bper-online/fetchCourseCategories?mainCourseId=" + data.course_select, function (dataa) {
+                            $("#courseCategory").find('option').remove().end().append("<option value='0' disabled selected>Course Category</option>");
+                            $.each(dataa, function (key, val) {
+                                $("#courseCategory").append("<option value='" + val.sub_main_course_id + "'>" + val.sub_main_course + "</option>");
+                            });
+                            $("#courseCategory").val(data.course_category);
+                        });
+                        $("#courseStream").show();
+                        $("#durationSelect").show();
+                        $.getJSON("http://localhost:8081/bper-online/fetchCourseStream?courseId=" + data.course_select + "&subCourseId=" + data.course_category, function (data) {
+                                $("#courseStream").find('option').remove().end().append("<option value='0' disabled selected>Stream/Specialization</option>");
+                                $.each(data, function (key, val) {
+                                    $("#courseStream").append("<option value='" + val.stream_id + "'>" + val.main_stream_name + "</option>");
+                                });
+                            });
+                        $.getJSON("http://localhost:8081/bper-online/fetchCourseStreamId?courseId="+data.course_stream, function (resppp) {
+                             $("#courseStream").val(resppp.stream_id);
+                        });
+                        $.getJSON("http://localhost:8081/bper-online/fetchCourseDuration?courseId=" + data.course_select, function (dataaa) {
+                            $("#durationSelect").find('option').remove().end().append("<option value='0' disabled selected>Duration</option>");
+                            $.each(dataaa, function (key, val) {
+                                $("#durationSelect").append("<option value='" + val.duration_id + "'>" + val.duration_name + "</option>");
+                            });
+                            $("#durationSelect").val(data.course_duration);
+                        });
+
+                       $.getJSON("http://localhost:8081/bper-online/fetchPhotoAndAadhar?preview_id="+preview_id+"&document_type=Photo", function (photosrc) {
+                            $("#photoDiv").hide();
+                            $("#image-preview").show();
+                            $("#image-preview").attr("src", photosrc.preview_document_path);
+                        });
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchPhotoAndAadhar?preview_id="+preview_id+"&document_type=Aadhaar", function (adharsrc) {
+                            $("#aadharDiv").hide();
+                            $("#image-preview-aadhar").show();
+                            $("#image-preview-aadhar").attr("src", adharsrc.preview_document_path);
+                        });
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchPhotoAndAadhar?preview_id="+preview_id+"&document_type=Signature", function (signsrc) {
+                            $("#signDiv").hide();
+                            $("#image-preview-sign").show();
+                            $("#image-preview-sign").attr("src", signsrc.preview_document_path);
+                        });
+
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchEducation?preview_id="+preview_id+"&document_type=Education", function (edsrc) {
+                          $.each(edsrc, function (key, val) {
+                            $("#eduCertificate").append("<li class='list-group-item'><a href='"+val.preview_document_path+"' target='_blank'>"+val.document_file_name+"</a></li>");
+                          });
+                        });
+                      });
+                    }
+                  });
+
+                  $('#checkbox').trigger('click');
+                  $("#step2Div").show();
+                }
+
+                $("#dob").datepicker({
+                    autoHide:true,
+                    format:"dd-mm-yyyy"
+                });
+                $(".yearpicker").yearpicker();
+
+
+                $.getJSON("http://localhost:8081/bper-online/fetchCourses", function (data) {
+                    $("#courseSelect").append("<option value='0' disabled selected>Course</option>");
+                    $.each(data, function (key, val) {
+                        $("#courseSelect").append("<option value='" + val.course_id + "'>" + val.course_name + "</option>");
+                    });
+                });
+               
+                $("#image-preview").hide();
+                $("#image-preview-sign").hide();
+                $("#image-preview-aadhar").hide();
+                $("#image").hide();
+                $("#signImage").hide();
+                $("#aadharImage").hide();
+
+                $("#photoDiv").click(function(){
+                    //$("#image").show();
+                    $("#image").trigger("click");
+                });
+
+               
+                $("#aadharDiv").on('click',function(){
+                    //$("#image").show();
+                    $("#aadharImage").trigger("click");
+                });
+
+
+                $("#courseSelect").on('change',function(){
+                    $("#courseError").hide();
+                    $("#courseError").html('');
+
+                    var val=$("#courseSelect").val();
+                    $("#courseCategory").show();
+                    $.getJSON("http://localhost:8081/bper-online/fetchCourseCategories?mainCourseId=" + val, function (data) {
+                        $("#courseCategory").find('option').remove().end().append("<option value='0' disabled selected>Course Category</option>");
+                        $.each(data, function (key, val) {
+                            $("#courseCategory").append("<option value='" + val.sub_main_course_id + "'>" + val.sub_main_course + "</option>");
+                        });
+                    });
+
+                    $.getJSON("http://localhost:8081/bper-online/fetchCourseDuration?courseId=" + val, function (data) {
+                        $("#durationSelect").find('option').remove().end().append("<option value='0' disabled selected>Duration</option>");
+                        $.each(data, function (key, val) {
+                            $("#durationSelect").append("<option value='" + val.duration_id + "'>" + val.duration_name + "</option>");
+                        });
+                    });
+                });
+
+                $("#courseCategory").on('change', function () {
+                    $("#courseCategoryError").hide();
+                    $("#courseCategoryError").html('');
+                    var courseSelect=$("#courseSelect").val();
+                    var courseCategory = $("#courseCategory").val();
+                    $("#courseStream").show();
+                    $("#durationSelect").show();
+
+                    $.getJSON("http://localhost:8081/bper-online/fetchCourseStream?courseId=" + courseSelect+"&subCourseId="+courseCategory, function (data) {
+                        $("#courseStream").find('option').remove().end().append("<option value='0' disabled selected>Stream/Specialization</option>");
+                        $.each(data, function (key, val) {
+                            $("#courseStream").append("<option value='" + val.stream_id + "'>" + val.main_stream_name + "</option>");
+                        });
+                    });
+                });
+
+                $("#courseStream").on('change',function(){
+                    $("#courseStreamError").hide();
+                    $("#courseStreamError").html('');
+                });
+
+                $("#durationSelect").on('change',function(){
+                    $("#durationError").hide();
+                    $("#durationError").html('');
+                });
+
+                
+                $('#checkbox').change(function() {
+                    if(this.checked) {
+                        $("#step2Div").show();
+                    }
+                    else{
+                        $("#step2Div").hide();
+                    }   
+                });
+
+
+                /*
+                Uploading  Image size reduce
+                */
+
+                $("#image").change(function () {
+                    //imagePreview(this);
+                   loadImageFile();
+                });
+
+                $("#image-preview").click(function () {
+                    $("#image").trigger("click");
+                });
+
+
+                /*function imagetoBase64(extension, base64code, fileName, folderPath){
+                    var resp;
+                    if(base64code!=null){
+                        var url = 'http://localhost:8081/bper-online/base64toimage?filextension='+extension+'&base64image='+base64code+"&fileName="+fileName+"&folderPath="+folderPath+"&previousFile="+$(".previousFile").val();
+                        console.log(url);
+                        $.ajax({
+                        url: url,
+                        cors: true,
+                        success: function (response) {
+                            resp=response.split("^");
+                            $(".folderPath").val(resp[0].replaceAll("\\","/"));
+                            $(".previousFile").val(resp[1].replaceAll("\\","/"));
+                        },
+                        error: function (xhr, ajaxOptions, thrownError) {
+                            $(".folderPath").val(thrownError);
+                        }
+                    });
+                    }
+                    
+                      
+                }*/
+
+                var fileReader = new FileReader();
+                var filterType = /^(?:image\/jpeg|image\/jpg)$/i;
+
+                fileReader.onload = function (event) {
+                var image = new Image();
+                
+                    image.onload=function(){
+                        document.getElementById("image-preview").src=image.src;
+                        var canvas=document.createElement("canvas");
+                        var context=canvas.getContext("2d");
+                        canvas.width=150;
+                        canvas.height=180;
+                        context.drawImage(image,
+                            0,
+                            0,
+                            image.width,
+                            image.height,
+                            0,
+                            0,
+                            canvas.width,
+                            canvas.height
+                        );
+                        
+                        document.getElementById("image").src = canvas.toDataURL();
+                        $("#image-preview").show();
+                        $("#image").hide();
+                            $("#photoDiv").hide();
+                            $("#errorPhoto").hide();
+                            $("#errorPhoto").html('');
+
+                            var src=$("#image-preview").attr('src');
+                            var extension = src.substring("data:image/".length, src.indexOf(";base64"));
+                            var base64code = src.split("base64,");
+                            var folderPath=$(".folderPath").val();
+
+                    }
+                    image.src=event.target.result;
+                };
+
+                var loadImageFile = function () {
+                    
+                    var uploadImage = document.getElementById("image");
+                    
+                    //check and retuns the length of uploded file.
+                    if (uploadImage.files.length === 0) { 
+                        $("#errorPhoto").show();
+                        $("#errorPhoto").html("Please Upload Photo");
+                        errors+="Photo Error-no file";
+                        $("#photoDiv").show();
+                        $("#image-preview").hide();
+                        return; 
+                    }
+                    
+                    //Is Used for validate a valid file.
+                    var uploadFile = document.getElementById("image").files[0];
+                    var uploadFileSize = document.getElementById("image").files[0].size;
+                    var imgkbytes = Math.round(parseInt(uploadFileSize)/1024);
+                    if (!filterType.test(uploadFile.type)) {
+                        $("#errorPhoto").show();
+                        $("#errorPhoto").html("Only jpeg, jpg are allowed");
+                        $("#photoDiv").show();
+                        $("#image-preview").hide();
+                        return;
+                    }else if(imgkbytes>200){
+                        $("#errorPhoto").show();
+                        $("#errorPhoto").html("Photo should be less than 200kb");
+                        $("#photoDiv").show();
+                        $("#image-preview").hide();
+                        return;
+                    }else{
+                        fileReader.readAsDataURL(uploadFile);
+                    }
+                }
+
+                /*Candidate Full Name Validation
+                */
+                $("#candidateFullName").keyup(function(e) {
+                    var key = e.keyCode;
+                    
+                    if (((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+                        e.preventDefault();
+                        $(this).val($(this).val().toUpperCase());
+                        $("#candidateFullNameError").hide();
+                        $("#candidateFullNameError").html('');
+                    }else{
+                        $("#candidateFullNameError").show();
+                        $("#candidateFullNameError").html("Only Alphabets and Space are Allowed");
+                    }
+                });
+                
+                $("#fatherName").keyup(function(e) {
+                    var key = e.keyCode;
+                    var val=$("#fatherName").val();
+                    if (((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+                        e.preventDefault();
+                        $(this).val($(this).val().toUpperCase());
+                        $("#fatherNameError").hide();
+                        $("#fatherNameError").html('');
+                    }else if(val=='' || val ==null){
+                        $("#fatherNameError").show();
+                        $("#fatherNameError").html("Father Name must not be empty");
+                    }else{
+                        $("#fatherNameError").show();
+                        $("#fatherNameError").html("Only Alphabets and Space are Allowed");
+                    }
+                });
+
+                $("#motherName").keyup(function(e) {
+                    var key = e.keyCode;
+                    var val=$("#motherName").val();
+                    if (((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+                        e.preventDefault();
+                        $(this).val($(this).val().toUpperCase());
+                        $("#motherNameError").hide();
+                        $("#motherNameError").html('');
+                    }else if(val=='' || val ==null){
+                        $("#motherNameError").show();
+                        $("#motherNameError").html("Mother Name must not be empty");
+                    }else{
+                        $("#motherNameError").show();
+                        $("#motherNameError").html("Only Alphabets and Space are Allowed");
+                    }
+                });
+                var regex = /^(0|91)?[6-9][0-9]{9}$/;
+                $('#mobileNumber').keyup(function () {
+                    this.value = this.value.replace(/[^0-9\.]/g, '');
+                });
+                
+                var mobileErrVal=false;
+
+                function validateMobileNumber(){
+                    var val=$("#mobileNumber").val();
+                    if(val=='' || val ==null){
+                        $("#mobileNumberError").show();
+                        $("#mobileNumberError").html("Mobile Number must not be empty");
+                        mobileErrVal=true;
+                    }else if(!(regex.test(val))) {
+                        $("#mobileNumberError").show();
+                        $("#mobileNumberError").html("Must be a valid mobile number");
+                        mobileErrVal=true;
+                    }else if(val.length<10) {
+                        $("#mobileNumberError").show();
+                        $("#mobileNumberError").html("Must be a valid mobile number");
+                        mobileErrVal=true;
+                    }else{
+                        $("#mobileNumberError").hide();
+                        $("#mobileNumberError").html('');
+                        mobileErrVal=false;
+                    }
+                }
+
+                $("#mobileNumber").click(function(){
+                    validateMobileNumber();
+                });
+
+                $("#mobileNumber").change(function(){
+                    validateMobileNumber();
+                });
+
+                $("#sendOTP").click(function(){
+                    validateMobileNumber();
+                    if(mobileErrVal==false){
+                        //trigger otp and verify
+                    }
+                });
+
+                var emailRegex=/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+                function validateEmailId(){
+                    var val=$("#emailId").val();
+                    if(val=='' || val ==null){
+                        $("#emailIdError").show();
+                        $("#emailIdError").html("Email-ID must not be empty");
+                    }else if(!(emailRegex.test(val))) {
+                        $("#emailIdError").show();
+                        $("#emailIdError").html("Must be a valid Email-ID");
+                    }else{
+                        $("#emailIdError").hide();
+                        $("#emailIdError").html('');
+                    }
+                }
+
+                $("#emailId").click(function(){
+                    validateEmailId();
+                });
+
+                $("#emailId").change(function(){
+                    validateEmailId();
+                });
+
+                $("#emailId").keyup(function(){
+                    validateEmailId();
+                });
+
+                $("#dob").keyup(function(){
+                    var dob=$("#dob").val();
+                    if(dob=='' || dob ==null){
+                        $("#dobError").show();
+                        $("#dobError").html("Select Date of Birth");
+                    }else{
+                        $("#dobError").hide();
+                        $("#dobError").html('');
+                    }
+                });
+
+                $("#gender").change(function(){
+                    var gender=$("#gender").val();
+                    if(gender=="0"){
+                        $("#genderError").show();
+                        $("#genderError").html("Please Select Gender");
+                    }else{
+                        $("#genderError").hide();
+                        $("#genderError").html("");
+                    }
+                });
+
+                $("#nationality").change(function(){
+                    var nationality=$("#nationality").val();
+                    if(nationality=="0"){
+                        $("#nationalityError").show();
+                        $("#nationalityError").html("Please Select Nationality");
+                    }else{
+                        $("#nationalityError").hide();
+                        $("#nationalityError").html("");
+                    }
+                });
+
+                $("#religion").change(function(){
+                    var religion=$("#religion").val();
+                    if(religion=="0"){
+                        $("#religionError").show();
+                        $("#religionError").html("Please Select Religion");
+                    }else{
+                        $("#religionError").hide();
+                        $("#religionError").html("");
+                    }
+                });
+
+                $("#community").change(function(){
+                    var community=$("#community").val();
+                    if(community=="0"){
+                        $("#communityError").show();
+                        $("#communityError").html("Please Select Community");
+                    }else{
+                        $("#communityError").hide();
+                        $("#communityError").html("");
+                    }
+                });
+
+                $("#handicapped").change(function(){
+                    var handicapped=$("#handicapped").val();
+                    if(handicapped=="0"){
+                        $("#handicappedError").show();
+                        $("#handicappedError").html("Please Select Physically Handicapped");
+                    }else{
+                        $("#handicappedError").hide();
+                        $("#handicappedError").html("");
+                    }
+                });
+
+                function validateCandidateAddress(){
+                    var candidateAddress=$("#candidateAddress").val();
+                    if(candidateAddress==''){
+                        $("#candidateAddressError").show();
+                        $("#candidateAddressError").html("Please Enter Candidate Full Address");
+                    }else{
+                        $("#candidateAddressError").hide();
+                        $("#candidateAddressError").html("");
+                    }
+                }
+                $('#candidateAddress').keyup(function () {
+                    validateCandidateAddress();
+                });
+
+                $("#candidateAddress").change(function(){
+                    validateCandidateAddress();
+                });
+
+
+                $("#qualification").change(function(){
+                    var qualification=$("#qualification").val();
+                    if(qualification=="0"){
+                        $("#qualificationError").show();
+                        $("#qualificationError").html("Please Select Qualification");
+                    }else{
+                        $("#qualificationError").hide();
+                        $("#qualificationError").html("");
+                    }
+                });
+
+                function validateStream(){
+                    var stream=$("#stream").val();
+                    if(stream==''){
+                        $("#streamError").show();
+                        $("#streamError").html("Please Enter Stream/Specialization");
+                    }else{
+                        $("#streamError").hide();
+                        $("#streamError").html("");
+                    }
+                }
+                $('#stream').keyup(function () {
+                    validateStream();
+                });
+
+                $("#stream").change(function(){
+                    validateStream();
+                });
+
+                function validateUniversity(){
+                    var university=$("#university").val();
+                    if(university==''){
+                        $("#universityError").show();
+                        $("#universityError").html("Please Enter Board/University");
+                    }else{
+                        $("#universityError").hide();
+                        $("#universityError").html("");
+                    }
+                }
+                $('#university').keyup(function () {
+                    validateUniversity();
+                });
+
+                $("#university").change(function(){
+                    validateUniversity();
+                });
+
+                function validateyearofpassing(){
+                    var yearofpassing=$("#yearofpassing").val();
+                    if(yearofpassing==''){
+                        $("#yearofpassingError").show();
+                        $("#yearofpassingError").html("Please Select Passed Year");
+                    }else{
+                        $("#yearofpassingError").hide();
+                        $("#yearofpassingError").html("");
+                    }
+                }
+                $('#yearofpassing').keyup(function () {
+                    $("#yearofpassing").val('');
+                    validateyearofpassing();
+                });
+
+                $("#yearofpassing").change(function(){
+                    validateyearofpassing();
+                });
+
+                $("#yearofpassing").click(function(){
+                    validateyearofpassing();
+                });
+
+                var percentageRegex=/(^\.*)+(^0*)+^\d+(\.\d+)?/;
+
+                function validatePercentage(){
+                    var percentage=$("#percentage").val();
+                    if(percentage==''){
+                        $("#percentageError").show();
+                        $("#percentageError").html("Please Enter Percentage");
+                    }else if(!(percentageRegex.test(percentage))){
+                        $("#percentageError").show();
+                        $("#percentageError").html("Please Enter Valid Percentage");
+                    }else{
+                        $("#percentageError").hide();
+                        $("#percentageError").html("");
+                    }
+                }
+                $('#percentage').keyup(function () {
+                    validatePercentage();
+                });
+
+                $("#percentage").change(function(){
+                    validatePercentage();
+                });
+
+                $("#aadharImage").change(function () {
+                    adharloadImageFile();
+                    
+                });
+
+                $("#image-preview-aadhar").click(function(){
+                    $("#aadharImage").trigger('click');
+                });
+
+                var adharfileReader = new FileReader();
+                var adharfilterType = /^(?:image\/jpeg|image\/jpg)$/i;
+
+                adharfileReader.onload = function (event) {
+                var image = new Image();
+                
+                    image.onload=function(){
+                        document.getElementById("image-preview-aadhar").src=image.src;
+                        var canvas=document.createElement("canvas");
+                        var context=canvas.getContext("2d");
+                        canvas.width=180;
+                        canvas.height=200;
+                        context.drawImage(image,
+                            0,
+                            0,
+                            image.width,
+                            image.height,
+                            0,
+                            0,
+                            canvas.width,
+                            canvas.height
+                        );
+                        
+                        document.getElementById("aadharImage").src = canvas.toDataURL();
+                        $("#image-preview-aadhar").show();
+                        $("#aadharImage").hide();
+                            $("#aadharDiv").hide();
+                            $("#errorAdharPhoto").hide();
+                            $("#errorAdharPhoto").html('');
+
+                            var src=$("#image-preview-aadhar").attr('src');
+                        var extension = src.substring("data:image/".length, src.indexOf(";base64"));
+                        var base64code = src.split("base64,");
+                        var folderPath=$(".folderPath").val();
+
+                    }
+                    image.src=event.target.result;
+                };
+
+                var adharloadImageFile = function () {
+                    
+                    var uploadImage = document.getElementById("aadharImage");
+                    
+                    //check and retuns the length of uploded file.
+                    if (uploadImage.files.length === 0) { 
+                        $("#errorAdharPhoto").show();
+                        $("#errorAdharPhoto").html("Please Upload AadharCard");
+                        $("#aadharDiv").show();
+                        $("#image-preview-aadhar").hide();
+                        return; 
+                    }
+                    
+                    //Is Used for validate a valid file.
+                    var uploadFile = document.getElementById("aadharImage").files[0];
+                    var uploadFileSize = document.getElementById("aadharImage").files[0].size;
+                    var imgkbytes = Math.round(parseInt(uploadFileSize)/1024);
+                    if (!adharfilterType.test(uploadFile.type)) {
+                        $("#errorAdharPhoto").show();
+                        $("#errorAdharPhoto").html("Only jpeg, jpg are allowed");
+                        $("#aadharDiv").show();
+                        $("#image-preview-aadhar").hide();
+                        return;
+                    }else if(imgkbytes>200){
+                        $("#errorAdharPhoto").show();
+                        $("#errorAdharPhoto").html("AadharCard should be less than 200kb");
+                        $("#aadharDiv").show();
+                        $("#image-preview-aadhar").hide();
+                        return;
+                    }else{
+                        adharfileReader.readAsDataURL(uploadFile);
+
+                        var src=$("#image-preview-aadhar").attr('src');
+                        var extension = src.substring("data:image/".length, src.indexOf(";base64"));
+                        var base64code = src.split("base64,");
+                        var folderPath=$(".folderPath").val();
+
+                    }
+                }
+
+                $("#signDiv").click(function () {
+                    $("#signImage").trigger('click');
+                    
+                });
+
+                $("#signImage").change(function () {
+                    signloadImageFile();
+                    
+                });
+
+                $("#image-preview-sign").click(function () {
+                    $("#signImage").trigger('click');
+                    
+                });
+                
+                var signfileReader = new FileReader();
+                var signfilterType = /^(?:image\/jpeg|image\/jpg)$/i;
+
+                signfileReader.onload = function (event) {
+                var image = new Image();
+                
+                    image.onload=function(){
+                        document.getElementById("image-preview-sign").src=image.src;
+                        var canvas=document.createElement("canvas");
+                        var context=canvas.getContext("2d");
+                        canvas.width=140;
+                        canvas.height=60;
+                        context.drawImage(image,
+                            0,
+                            0,
+                            image.width,
+                            image.height,
+                            0,
+                            0,
+                            canvas.width,
+                            canvas.height
+                        );
+                        
+                        document.getElementById("signImage").src = canvas.toDataURL();
+                        $("#signDiv").hide();
+                        $("#image-preview-sign").show();
+                        $("#signImage").hide();
+                        $("#errorSignPhoto").hide();
+                        $("#errorSignPhoto").html('');
+                    }
+                    image.src=event.target.result;
+                };
+
+                var signloadImageFile = function () {
+                    
+                    var uploadImage = document.getElementById("signImage");
+                    
+                    //check and retuns the length of uploded file.
+                    if (uploadImage.files.length === 0) { 
+                        $("#errorSignPhoto").show();
+                        $("#errorSignPhoto").html("Please Upload Signature");
+                        $("#signDiv").show();
+                        $("#image-preview-sign").hide();
+                        return; 
+                    }
+                    
+                    //Is Used for validate a valid file.
+                    var uploadFile = document.getElementById("signImage").files[0];
+                    var uploadFileSize = document.getElementById("signImage").files[0].size;
+                    var imgkbytes = Math.round(parseInt(uploadFileSize)/1024);
+                    if (!adharfilterType.test(uploadFile.type)) {
+                        $("#errorSignPhoto").show();
+                        $("#errorSignPhoto").html("Only jpeg, jpg are allowed");
+                        $("#signDiv").show();
+                        $("#image-preview-sign").hide();
+                        return;
+                    }else if(imgkbytes>200){
+                        $("#errorSignPhoto").show();
+                        $("#errorSignPhoto").html("Signature should be less than 200kb");
+                        $("#signDiv").show();
+                        $("#image-preview-sign").hide();
+                        return;
+                    }else{
+                        signfileReader.readAsDataURL(uploadFile);
+                    }
+                }
+
+                function createNewFile(){
+                    var selectedFile = document.getElementById("input-res-1").files;
+                    var fileName = document.getElementById("input-res-1").files[0].name;
+                    var fileSize=document.getElementById("input-res-1").files[0].size/1024;
+                        //Check File is not Empty
+                        if (selectedFile.length > 0) {
+                            // Select the very first file from list
+                            var fileToLoad = selectedFile[0];
+                            // FileReader function for read the file.
+                            var fileReader = new FileReader();
+                            var base64;
+                            // Onload of file read the file content
+                            fileReader.onload = function (fileLoadedEvent) {
+                                base64 = fileLoadedEvent.target.result;
+                                // Print data in console
+                                //console.log(base64);
+                                $("#educationDiv").append('<div class="ajax-file-upload-statusbar">'+
+                                '<div class="ajax-file-upload-filename">&nbsp;&nbsp;&nbsp'+
+                                    '<a class="educationalDocuments" href='+base64+' target="_blank">'+fileName+'</a> '+
+                                    '<i class="fa fa-trash deleteEducationCert" style="float:right;padding: 5px;color: red;"></i></div></div>');
+                                $("#input-res-1").val('');
+                            };
+                            // Convert data to base64
+                           fileReader.readAsDataURL(fileToLoad);
+                        }
+                }
+
+                $("#educationDiv").on('click','.deleteEducationCert',function(e){
+                    e.preventDefault();
+                    $(this).closest('.ajax-file-upload-statusbar').remove();
+                });
+
+                function byteConverter(bytes, decimals, only) {
+                    const K_UNIT = 1024;
+                    const SIZES = ["Bytes", "KB", "MB", "GB", "TB", "PB"];
+
+                    if (bytes == 0) return "0 Byte";
+
+                    if (only === "MB") return (bytes / (K_UNIT * K_UNIT)).toFixed(decimals) + " MB";
+
+                    let i = Math.floor(Math.log(bytes) / Math.log(K_UNIT));
+                    let resp = parseFloat((bytes / Math.pow(K_UNIT, i)).toFixed(decimals)) + " " + SIZES[i];
+
+                    return resp;
+                }
+
+              $("#input-res-1").on('change',function(){
+                var selectedFile = document.getElementById("input-res-1").files;
+                var fileName = document.getElementById("input-res-1").files[0].name;
+                var fileSize=document.getElementById("input-res-1").files[0].size;
+
+                var fileType=fileName.split(".");
+                if(fileType[1]=='jpg' || fileType[1]=='jpeg'){
+                    var totalSizeKB = byteConverter(fileSize, 3, "KB")
+                    if(totalSizeKB>250){
+                        $("#educationalFileError").show();
+                        $("#educationalFileError").html("jpeg, jpg file should not exceed 250kb");
+                        $("#input-res-1").val('');
+                        return ;
+                    }else{
+                        $("#educationalFileError").hide();
+                        $("#educationalFileError").html('');
+                        createNewFile();
+                    }
+                } else if (fileType[1] == 'pdf') {
+                    var totalSizeMB = byteConverter(fileSize, 2, "MB")
+                    if (totalSizeMB > 2) {
+                        $("#educationalFileError").show();
+                        $("#educationalFileError").html("pdf file should not exceed 2mb");
+                        $("#input-res-1").val('');
+                        return;
+                    } else {
+                        $("#educationalFileError").hide();
+                        $("#educationalFileError").html('');
+                        createNewFile();
+                    }
+                } else{
+                    $("#educationalFileError").show();
+                    $("#educationalFileError").html("Only jpeg, jpg, pdf files are allowed");
+                    $("#input-res-1").val('');
+                        return;
+                }
+
+                  
+              });
+
+                $("#previewBtn").click(function(){
+                    
+                    var str = $("#onlineApplication").serialize();
+                    var image=$("#image").attr('src');
+                    var candidateFullName=$("#candidateFullName").val();
+                    var fatherName=$("#fatherName").val();
+                    var motherName=$("#motherName").val();
+                    var mobileNumber=$("#mobileNumber").val();
+                    var emailId=$("#emailId").val();
+                    var dob=$("#dob").val();
+                    var gender=$("#gender").val();
+                    var candidateAddress=$("#candidateAddress").val();
+                    var nationality=$("#nationality").val();
+                    var religion=$("#religion").val();
+                    var community=$("#community").val();
+                    var handicapped=$("#handicapped").val();
+                    var qualification=$("#qualification").val();
+                    var stream=$("#stream").val();
+                    var university=$("#university").val();
+                    var yearofpassing=$("#yearofpassing").val();
+                    var percentage=$("#percentage").val();
+                    var courseSelect=$("#courseSelect").val();
+                    var courseCategory=$("#courseCategory").val();
+                    var courseStream=$("#courseStream").val();
+                    var durationSelect=$("#durationSelect").val();
+                    var aadharImage=$("#aadharImage").attr('src');
+                    var signImage=$("#signImage").attr('src');
+                    var verified=$("#mobileVerified").val();
+                    
+                    
+                    
+                    
+
+                    if(image=='' || image==null || image=='undefined'){
+                        $("#errorPhoto").show();
+                        $("#errorPhoto").html('Please Upload Photo');
+                        $("html, body").animate({ scrollTop: 0 }, "slow");
+                    }else if(candidateFullName==''){
+                        $("#candidateFullNameError").show();
+                        $("#candidateFullNameError").html('Please enter Candidate Full Name');
+                        $('.candidateFullNameDiv')[0].scrollIntoView(true);
+                    }else if(fatherName==''){
+                        $("#fatherNameError").show();
+                        $("#fatherNameError").html('Please enter Father Name');
+                        $('.fatherNameDiv')[0].scrollIntoView(true);
+                    }else if(motherName==''){
+                        $("#motherNameError").show();
+                        $("#motherNameError").html('Please enter Mother Name');
+                        $('.fatherNameDiv')[0].scrollIntoView(true);
+                    }else if(mobileNumber==''){
+                        $("#mobileNumberError").show();
+                        $("#mobileNumberError").html('Please enter Mobile Number');
+                        $('.mobileNumberDiv')[0].scrollIntoView(true);
+                    }else if(verified=='unverified'){
+                        $("#mobileNumberError").show();
+                        $("#mobileNumberError").html('Please Verify the Mobile Number');
+                        $('.mobileNumberDiv')[0].scrollIntoView(true);
+                    }else if(emailId==''){
+                        $("#emailIdError").show();
+                        $("#emailIdError").html('Please enter Email-ID');
+                        $('.mobileNumberDiv')[0].scrollIntoView(true);
+                    }else if(dob==''){
+                        $("#dobError").show();
+                        $("#dobError").html('Please Select Date of Birth');
+                        $('.dobDiv')[0].scrollIntoView(true);
+                    }else if(gender=='0' || gender==null){
+                        $("#genderError").show();
+                        $("#genderError").html('Please Select Gender');
+                        $('.dobDiv')[0].scrollIntoView(true);
+                    }else if(candidateAddress==''){
+                        $("#candidateAddressError").show();
+                        $("#candidateAddressError").html('Please Enter Communication Address');
+                        $('.candidateAddressDiv')[0].scrollIntoView(true);
+                    }else if(nationality=='0' || nationality==null){
+                        $("#nationalityError").show();
+                        $("#nationalityError").html('Please Select Nationality');
+                        $('.nationalityDiv')[0].scrollIntoView(true);
+                    }else if(religion=='0' || religion==null){
+                        $("#religionError").show();
+                        $("#religionError").html('Please Select Religion');
+                        $('.nationalityDiv')[0].scrollIntoView(true);
+                    }else if(community=='0' || community==null){
+                        $("#communityError").show();
+                        $("#communityError").html('Please Select Community');
+                        $('.communityDiv')[0].scrollIntoView(true);
+                    }else if(handicapped=='0' || handicapped==null){
+                        $("#handicappedError").show();
+                        $("#handicappedError").html('Please Select Physically Handicapped');
+                        $('.communityDiv')[0].scrollIntoView(true);
+                    }else if(qualification=='0' || qualification==null){
+                        $("#qualificationError").show();
+                        $("#qualificationError").html('Please Select Qualification');
+                        $('.qualificationDiv')[0].scrollIntoView(true);
+                    }else if(stream==''){
+                        $("#streamError").show();
+                        $("#streamError").html('Please Enter Stream/Specialization');
+                        $('.qualificationDiv')[0].scrollIntoView(true);
+                    }else if(university==''){
+                        $("#universityError").show();
+                        $("#universityError").html('Please Enter University Name');
+                        $('.universityDiv')[0].scrollIntoView(true);
+                    }else if(yearofpassing==''){
+                        $("#yearofpassingError").show();
+                        $("#yearofpassingError").html('Please Select Year of Passing');
+                        $('.communityDiv')[0].scrollIntoView(true);
+                    }else if(percentage==''){
+                        $("#percentageError").show();
+                        $("#percentageError").html('Please Enter Percentage');
+                        $('.communityDiv')[0].scrollIntoView(true);
+                    }else if(courseSelect=='0' || courseSelect==null){
+                        $("#courseError").show();
+                        $("#courseError").html('Please Select Course');
+                        $('.courseSelectDiv')[0].scrollIntoView(true);
+                    }else if(courseCategory=='0' || courseCategory==null){
+                        $("#courseCategoryError").show();
+                        $("#courseCategoryError").html('Please Select Course Category');
+                        $('.courseSelectDiv')[0].scrollIntoView(true);
+                    }else if(courseStream=='0' || courseStream==null){
+                        $("#courseStreamError").show();
+                        $("#courseStreamError").html('Please Select Stream/Specialization');
+                        $('.courseSelectDiv')[0].scrollIntoView(true);
+                    }else if(durationSelect=='0' || durationSelect==null){
+                        $("#durationError").show();
+                        $("#durationError").html('Please Select Duration');
+                        $('.courseSelectDiv')[0].scrollIntoView(true);
+                    }else if(aadharImage=='' || aadharImage==null || aadharImage=='undefined'){
+                        $("#errorAdharPhoto").show();
+                        $("#errorAdharPhoto").html('Please Upload Aadhar Photo');
+                        $('.aadharImageDiv')[0].scrollIntoView(true);
+                    }else if(signImage=='' || signImage==null || signImage=='undefined'){
+                        $("#errorSignPhoto").show();
+                        $("#errorSignPhoto").html('Please Upload Signature');
+                        $('.aadharImageDiv')[0].scrollIntoView(true);
+                    }else{
+                        $("#overlay").fadeIn(300);
+                        var search = {}
+                        search["candidate_full_name"] = $("#candidateFullName").val();
+                        search["father_name"] = $("#fatherName").val();
+                        search["mother_name"] = $("#motherName").val();
+                        search["mobile_number"] = $("#mobileNumber").val();
+                        search["mobile_number_verified"] = $("#mobileVerified").val();
+                        search["email_id"] = $("#emailId").val();
+                        search["dob"] = $("#dob").val();
+                        search["communication_address"] = $("#candidateAddress").val();
+                        search["gender"] = $("#gender").val();
+                        search["nationality"] = $("#nationality").val();
+                        search["religion"] = $("#religion").val();
+                        search["community"] = $("#community").val();
+                        search["handicapped"] = $("#handicapped").val();
+                        search["qualification"] = $("#qualification").val();
+                        search["stream"] = $("#stream").val();
+                        search["university"] = $("#university").val();
+                        search["yearofpassing"] = $("#yearofpassing").val();
+                        search["percentage"] = $("#percentage").val();
+                        search["course_select"] = $("#courseSelect").val();
+                        search["course_category"] = $("#courseCategory").val();
+                        search["course_stream"] = $("#courseStream").val();
+                        search["course_duration"] = $("#durationSelect").val();
+                        search["added_ip"] = $("#ipaddress").val();
+                        search["photoBase64"]=$("#image-preview").attr('src');
+                        search["aadharCardBase64"]=$("#image-preview-aadhar").attr('src');
+                        search["signatureBase64"]=$("#image-preview-sign").attr('src');
+                        jsonObj = [];
+                        $(".educationalDocuments").each(function () {
+
+                            var href = $(this).attr("href");
+                            var val=$(this).text();
+                            jsonObj.push(href+"@@@"+val);
+                        });
+                        search["educationalBase64"]=jsonObj;
+                        
+                       
+                         $.ajax({
+                            type : "POST",
+                            contentType: "application/json",
+                            data: JSON.stringify(search),
+                            url: "http://localhost:8081/bper-online/createPreview",
+                            async: false,
+                            cache: false,
+                            dataType: "json",
+                            success: function (response) {
+                                console.log(response);
+                                if(response.message='success'){
+                                    $("#overlay").fadeOut(300);
+                                    window.open("online-application-preview.html?preview_id="+response.previewid,"_self");
+                                }
+                            }, error: function (jq, status, message) {
+                                $("#overlay").fadeOut(300);
+                                console.log('A jQuery error has occurred. Status: ' + status + ' - Message: ' + message);
+                             }
+                        });
+                    }
+                });
+
+
+                $("#sendOTP").click(function(){
+                        var val=$("#mobileNumber").val();
+                        if (val == '' || val == null) {
+                        $("#mobileNumberError").show();
+                        $("#mobileNumberError").html("Mobile Number must not be empty");
+                        mobileErrVal = true;
+                        } else if (!(regex.test(val))) {
+                            $("#mobileNumberError").show();
+                            $("#mobileNumberError").html("Must be a valid mobile number");
+                            mobileErrVal = true;
+                        } else if (val.length < 10) {
+                            $("#mobileNumberError").show();
+                            $("#mobileNumberError").html("Must be a valid mobile number");
+                            mobileErrVal = true;
+                        } else {
+                            $("#mobileNumberError").hide();
+                            $("#mobileNumberError").html('');
+                            mobileErrVal = false;
+
+                            $("#overlay").fadeIn(300);
+                            $.ajax({
+                            type: 'GET',
+                            url: "http://localhost:8081/bper-online/sendSMS?mobileNumber="+val,
+                            success: function (data) {
+                                    if (data == 'success') {
+                                        $("#otpModal #mobileNumberModal").html(val);
+                                        $("#otpModal").modal('show');
+                                        //$("#otpModal").modal({backdrop: 'static', keyboard: false});
+                                        $("#overlay").fadeOut(300);
+                                        $('#otpModal #verifyOtp').prop('disabled', false);
+                                    } else {
+                                        $("#overlay").fadeOut(300);
+                                        $("#mobileNumberError").show();
+                                        $("#mobileNumberError").html('Error while sending sms please retry')
+                                    }
+                                 }
+                            });
+                        }
+                });
+
+                $("#otpModal .resendClick").click(function(){
+                    var val=$("#mobileNumber").val();
+
+                    $("#overlay").fadeIn(300);
+                            $.ajax({
+                            type: 'GET',
+                            url: "http://localhost:8081/bper-online/sendSMS?mobileNumber="+val,
+                            success: function (data) {
+                                    if (data == 'success') {
+                                        $("#overlay").fadeOut(300);
+                                        $("#otpModal #otpError").show();
+                                        $("#otpModal #otpError").html('OTP Sent Successfully');
+                                        $('#otpModal #verifyOtp').prop('disabled', false);
+                                    } else {
+                                        $("#overlay").fadeOut(300);
+                                        $("#otpModal #otpError").show();
+                                        $("#otpModal #otpError").html('Error while sending sms please retry');
+                                    }
+                                 }
+                            });
+                }); 
+
+                $("#otpModal #verifyOtp").click(function(){
+                    var otp1=$("#otpModal #otp1").val();
+                    var otp2=$("#otpModal #otp2").val();
+                    var otp3=$("#otpModal #otp3").val();
+                    var otp4=$("#otpModal #otp4").val();
+                    var val=$("#mobileNumber").val();
+
+                    if (otp1 == null || otp1 == '') {
+                        $("#otpModal #otpError").show();
+                        $("#otpModal #otpError").html('Please Enter the OTP');
+                    } else if (otp2 == null || otp2 == '') {
+                        $("#otpModal #otpError").show();
+                        $("#otpModal #otpError").html('Please Enter the OTP');
+                    } else if (otp3 == null || otp3 == '') {
+                        $("#otpModal #otpError").show();
+                        $("#otpModal #otpError").html('Please Enter the OTP');
+                    } else if (otp4 == null || otp4 == '') {
+                        $("#otpModal #otpError").show();
+                        $("#otpModal #otpError").html('Please Enter the OTP');
+                    }else{
+                        $("#otpModal #otpError").hide();
+                        $("#overlay").fadeIn(300);
+                        
+                        $.ajax({
+                            type: 'GET',
+                            url: "http://localhost:8081/bper-online/verifyOTP?mobileNumber="+val+"&otp1="+otp1+"&otp2="+otp2+"&otp3="+otp3+"&otp4="+otp4,
+                            success: function (data) {
+                                    if (data == 'success') {
+                                        $("#otpModal").modal('hide');
+                                        $("#overlay").fadeOut(300);
+                                        $("#submitOTPDiv").hide();
+                                        $("#verifyOTPDiv").show();
+                                        $("#mobileVerified").val('verified');
+                                    } else {
+                                        $("#overlay").fadeOut(300);
+                                        $("#otpModal #otpError").show();
+                                        $("#otpModal #otpError").html('Error while verifying the otp, please retry')
+                                    }
+                                 }
+                            });
+                    }
+                });
+
+            });
+        </script>
+</body>
+
+</html>

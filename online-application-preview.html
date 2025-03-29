@@ -1,0 +1,823 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Online Application - Board of Professional Education and Research</title>
+    <meta name="author" content="themeholy">
+    <meta name="description" content="Edura - Online Courses & Education HTML Template">
+    <meta name="keywords" content="Edura - Online Courses & Education HTML Template">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/logo-bper.png">
+    
+    
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" href="img/logo-bper.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Jost:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/app.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/own-css.css">
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet"  href="css/yearpicker.css">
+        <link rel="stylesheet"  href="css/datepicker.css">
+</head>
+
+<body>
+    
+    <div class="space-top">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 center-div">
+                <div class="col-md-12 mainDiv">
+                    <div class="container-fluid border border-success">
+                        <div class="container mainLogoClass"">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="img/online-icon.png" class="img-responsive center-block d-block mx-auto"
+                                        alt="Sample Image" style="width:20%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <h5 class="mainH5ClassEnglish">BOARD OF PROFESSIONAL EDUCATION AND RESEARCH  <br>STUDENT ONLINE APPLICATION</h5>
+                             <h5 class="mainH5ClassHindi">बोर्ड ऑफ़ प्रोफेशनल एजुकेशन एंड रीसर्च - स्टूडेंट ऑनलाइन एप्लीकेशन</h5>
+                        </div>
+                        <div class="row progressRow">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="progress progressClass">
+                                    <div class="progress-bar bg-success progressText" role="progressbar" style="width: 100%;"
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <p class="text-start progressPPClass">Application Preview</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="col-md-2 previewFontFamily">
+                                    <b>Instructions:</b>
+                                </div>
+                                <div class="col-md-12 instrunctionsClass">
+                                    <ul>
+                                        <li><small>Prospective candidates are required to apply online, carefully following the comprehensive instructions provided when online applications are announced, concurrently with the release of the examination notification.</small></li>
+                                        <li><small>The online application form can be completed and submitted through the Commission's web portal by the specified deadline for application submissions, as indicated in the Examination Notice.</small></li>
+                                        <li><small>It is strongly recommended that applicants meticulously review the detailed instructions provided by the Commission at the time of inviting online applications. This ensures that their applications remain free from avoidable issues leading to rejection. </small></li>
+                                        <li><small>Upon the successful completion of both Part-I and Part-II of the online application process, candidates are required to submit their unique RID (Registration ID) number and date of birth. Subsequently, they should click the "SUBMIT" button to finalize the entire application procedure. </small></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-2 photoImageDiv" style="outline: 1px solid green;">
+                                <img id="image-preview" class="photoImageDiv" src="" alt="Image Preview"  />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <hr class="new5">
+                            </div>
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">General Information</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Candidate Full Name: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="candidateFullName"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Father Name: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="fatherName"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Mother Name: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="motherName"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Mobile Number: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="mobileNumber"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>OTP: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="verified"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Candidate Email-ID: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="emailId"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Date of Birth (DD-MM-YYYY): </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="dob"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Gender: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="gender"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Communication Address: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="communicationAddress"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Nationality: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="nationality"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Religion: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="religion"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Community: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="community"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Physically Handicapped: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="handicapped"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">Educational Qualification</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Qualification: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="qualification"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Stream/Specialization: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="stream"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Board/University: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="university"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Year of Passing: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="yearofpassing"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Percentage: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="percentage"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">Course Information</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Course Category: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="courseSelect"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Course: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="courseCategory"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Stream / Specialization: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="courseStream"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="container previewFontFamily">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label  class="col-form-label"><b>Duration: </b></label>
+                              </div>
+                              <div class="col-md-9">
+                                <label  class="col-form-label" id="durationSelect"></label>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">Upload Documents</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row previewFontFamily">
+                            <div class="col-md-3 previewFontFamily">
+                                <div class="col-md-4">Aadhaar:</div><br>
+                                <div class="col-md-8">
+                                    <div class="col-md-12 signAadharDiv" style="outline: 1px solid green;">
+                                        <img id="image-preview-aadhar" src="" class="signAadharDiv" alt="Image Preview" style="display: block;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6 previewFontFamily">
+                                <div class="col-md-5">Educational Certificates: </div><br>
+                                <div class="col-md-7">
+                                    <ul class="list-group" id="eduCertificate">
+                                        
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="row headingDiv">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <h5 class="text-center h5Class">Terms and Conditions</h5>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row previewFontFamily">
+                            <div class="col-md-12">
+                                <textarea class="form-control termsTextAreaClass" id="exampleFormControlTextarea1" rows="5" style="height:auto;">
+1. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+2. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+3. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+4. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+5. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+6. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+7. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+
+8. This website/application is operated by [Your Business]. Our principal place of business is located at [Your Business Address]. You can contact us by writing to the business address given above, by using our website contact form, by email to [Your Business Email], or by telephone on [Your Business Phone Number].
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="row previewFontFamily" style="margin-top: 40px;">
+                            <div class="col-md-8">
+                                <input id="checkbox" type="checkbox" class="agreeCheckbox" checked onclick="return false;" onkeydown="return false;"/>
+                                <label for="checkbox"> I hereby declare that the information given above and in the enclosed documents is
+                                    true to the best of my knowledge and belief and nothing has been concealed therein.
+                                </label>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2">
+                                <div class="col-md-12">
+                                    <div class="col-md-12 signImageDiv d-inline-block" style="outline: 1px solid green;">
+                                        <img id="image-preview-sign" class="signImageDiv" src="" alt="Image Preview" style="display: block;" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="font-style: italic;">Applicant Signature</div>
+                            </div>
+                            <!--<div class="col-md-2">
+                                <div class="col-md-12"><button class="btn btn-success float-end btn-lg">Submit</button></div>
+                                
+                            </div>-->
+                        </div>
+                        <div class="row previewFontFamily" style="margin-top: 40px;">
+                            
+                            <div class="col-md-3 ">
+                                <div class="col-md-12">
+                                    <div class="col-md-12"><button id="editApplication" class="btn btn-primary btn-lg" style="font-size: 20px;background-color: #161871;"><i class="fas fa-edit" style="font-size: 18px;"></i> Edit Application</button></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-md-12"><button id="previewSubmit" class="btn btn-success btn-lg float-end" style="font-size: 20px;background-color: #2e6b24"><i class="fa fa-paper-plane" aria-hidden="true" style="font-size: 18px;"></i>  Submit Application</i></button></div>
+                                
+                            </div>
+                        </div>
+                        <!--<div class="row" style="margin-top: 10%;display:none;" >
+                            <div class="col-md-3">
+            
+                            </div>
+                            <div class="col-md-6 text-center" style="margin-bottom:20px;">
+                                
+                            </div>
+                            <div class="col-md-1">
+            
+                            </div>
+                        </div>-->
+            
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        
+    </div> 
+
+    <!-- Bootstrap Basic Modal -->
+
+<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-hidden="true" data-bs-backdrop="static">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title modalFontFamily">Application Confirmation</h2>
+				
+			</div>
+			<div class="modal-body previewFontFamily">
+				<p>Please check and verify all fields, Once application submitted cannot be changed / revoked.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="editApplication" style="background-color: #161871;"><i class="fas fa-edit" style="font-size: 18px;"></i> Edit Application</button>
+				<button type="button" class="btn btn-success" id="modalSubmit" style="background-color: #2e6b24"><i class="fa fa-paper-plane" aria-hidden="true" style="font-size: 18px;"></i>  Submit Application</i></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Thankyou Modal -->
+
+
+<div tabindex="-1" class="modal pmd-modal fade text-center" id="pmd-title-dialog" style="display: none;" aria-hidden="true" data-bs-backdrop="static">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="pmd-card-icon" style="padding: 15px;">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="75px" viewBox="162.5 162.5 75 75" enable-background="new 162.5 162.5 75 75" xml:space="preserve">
+						<g>
+						<path fill="#33CC99" d="M199.943,162.54c-20.711,0-37.5,16.789-37.5,37.5c0,20.71,16.789,37.5,37.5,37.5
+							c20.711,0,37.5-16.789,37.5-37.5C237.443,179.329,220.654,162.54,199.943,162.54L199.943,162.54z M199.943,234.332
+							c-18.938,0-34.291-15.354-34.291-34.292c0-18.938,15.353-34.291,34.291-34.291c18.939,0,34.292,15.353,34.292,34.291l0,0
+							C234.234,218.979,218.882,234.332,199.943,234.332z"></path>
+						<path fill="none" d="M176.333,176.333h46.334v46.334h-46.334V176.333z"></path>
+						<path fill="#33CC99" d="M193.765,207.568l-8.108-8.108l-2.703,2.704l10.811,10.811l23.167-23.167l-2.703-2.703L193.765,207.568z"></path>
+						</g>
+					</svg>
+				</div>
+				<h2 class="modalFontFamily">Application Submitted Successfully.</h2>
+				<p>Your Application Reference no. <b id="applicationRefNo"></b>. <br>
+				We will process your application shortly. Please Note the above Application Reference no for further Communication.
+                Thanks for Choosing Board of Professional Education and Research</p>
+			</div>
+			<div class="modal-footer justify-content-center">
+				<button type="button" class="btn btn-primary" id="homePage" style="background-color: #161871;"><i class="fas fa-home" style="font-size: 18px;"></i>  &nbsp;&nbsp;Go to Homepage</button>
+				<button type="button" class="btn btn-success" id="downloadApplication" style="background-color: #2e6b24"><i class="fa fa-file-pdf" aria-hidden="true" style="font-size: 18px;"></i>    
+                    &nbsp;&nbsp;Download Application</i></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="noModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Not Accessible</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Sorry can't access this Page. Navigating to the Online Application Page.
+      </div>
+      
+    </div>
+  </div>
+</div>
+    
+    <footer class="footer-wrapper footer-layout1">
+        
+       
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-contact-wrap">
+                    <div class="footer-contact">
+                        <div class="footer-contact_icon icon-btn"><i class="fal fa-phone"></i></div>
+                        <div class="media-body">
+                            <p class="footer-contact_text">Call us any time:</p><a href="tel+11234567890"
+                                class="footer-contact_link">044-47792999​</a>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="footer-contact">
+                        <div class="footer-contact_icon icon-btn"><i class="fal fa-envelope"></i></div>
+                        <div class="media-body">
+                            <p class="footer-contact_text">Email us 24/7 hours:</p><a href="mailto:info@edura.com"
+                                class="footer-contact_link">info@bper.org.in</a>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="footer-contact">
+                        <div class="footer-contact_icon icon-btn"><i class="fal fa-location-dot"></i></div>
+                        <div class="media-body">
+                            <p class="footer-contact_text">Our university location:</p><a
+                                href="https://maps.app.goo.gl/fKgGa4zgbZsGnpRR8" target="_blank" class="footer-contact_link">New No:31, Old No:14, 1st Floor, Rear Building, Sait Colony 1st Street, Egmore, Chennai-600008</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrap">
+            <div class="widget-area">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6 col-xxl-3 col-xl-3">
+                            <div class="widget footer-widget">
+                                <div class="th-widget-about">
+                                    <div class="about-logo"><a href="index.html"><img src="img/main-logo.png"
+                                                alt="Edura"></a></div>
+                                    <div class="th-social">
+                                        <h6 class="title text-white">FOLLOW US ON:</h6>
+                                        <a target="_blank" href="https://www.instagram.com/board_of_professional_edu_res/"><i class="fab fa-instagram"></i></a> 
+                                        <a target="_blank" href="https://twitter.com/bperglobal"><i class="fab fa-twitter"></i></a> 
+                                        <a target="_blank" href="https://www.linkedin.com/in/board-of-professional-education-and-research-425b54292/"><i class="fab fa-linkedin-in"></i></a> 
+                                        <a target="_blank" href="https://wa.me/message/IQAB33YGA6NGO1"><i class="fab fa-whatsapp"></i></a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-auto">
+                            <div class="widget widget_nav_menu footer-widget">
+                                <h3 class="widget_title">Quick Links</h3>
+                                <div class="menu-all-pages-container">
+                                    <ul class="menu" style="list-style-type: none;">
+                                        <li><a href="https://bper.org.in/bper-corporate-associate-membership">
+                                            <span class="elementor-icon-list-icon">
+                                            <span class="elementor-icon-list-text">Corporate Associate Membership</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon"></span>
+                                            <span class="elementor-icon-list-text">Institutional Membership</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon">
+                                             <span class="elementor-icon-list-text">Student Membership</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-auto">
+                            <div class="widget widget_nav_menu footer-widget">
+                                <h3 class="widget_title">Courses</h3>
+                                <div class="menu-all-pages-container">
+                                    <ul class="menu" style="list-style-type: none;">
+                                        <li><a href="https://bper.org.in/bper-corporate-associate-membership">
+                                            <span class="elementor-icon-list-icon">
+                                            <span class="elementor-icon-list-text">UG Courses</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon"></span>
+                                            <span class="elementor-icon-list-text">PG Courses</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon">
+                                             <span class="elementor-icon-list-text">Diploma Engg Courses</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://bper.org.in/bper-institutional-membership/">
+                                            <span class="elementor-icon-list-icon">
+                                             <span class="elementor-icon-list-text">Vocational Courses</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-auto">
+                            <div class="widget widget_nav_menu footer-widget">
+                                <h3 class="widget_title">Logins</h3>
+                                <div class="menu-all-pages-container">
+                                    <ul class="menu">
+                                        <li><a href="contact.html">ACC Login</a></li>
+                                        <li><a href="contact.html">Staff Login</a></li>
+                                        <li><a href="contact.html">Admin Login</a></li>
+                                        <li><a href="contact.html">Email Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xxl-3 col-xl-3">
+                            <div class="widget newsletter-widget footer-widget">
+                                <h3 class="widget_title">Get in touch!</h3>
+                                <p class="footer-text">Subscribe our newsletter to get our latest Update & news</p>
+                                <form class="newsletter-form form-group"><input class="form-control" type="email"
+                                        placeholder="Email Email" required=""> <i class="far fa-envelope"></i> <button
+                                        type="submit" class="th-btn style3">Subscribe Now <i
+                                            class="far fa-arrow-right ms-1"></i></button></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright-wrap">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6">
+                            <p class="copyright-text">Copyright © 2023 <a href="index.html">BPER</a> All Rights
+                                Reserved.</p>
+                        </div>
+                        <div class="col-md-6 text-end d-none d-md-block">
+                            <div class="footer-links">
+                                <ul>
+                                    <li><a href="about.html">Privacy Policy</a></li>
+                                    <li><a href="about.html">Terms & Condition</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll-top"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg></div>
+        <div id="overlay">
+          <div class="cv-spinner">
+            <span class="spinner"></span>
+          </div>
+        </div>
+        <input type="hidden" class="ipaddress" id="ipaddress">
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="js/app.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+        <script src="js/yearpicker.js"></script>
+        <script src = "https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+              // Read a page's GET URL variables and return them as an associative array.
+                function getUrlVars()
+                {
+                    var vars = [], hash;
+                    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                    for(var i = 0; i < hashes.length; i++)
+                    {
+                        hash = hashes[i].split('=');
+                        vars.push(hash[0]);
+                        vars[hash[0]] = hash[1];
+                    }
+                    return vars;
+                }
+                var preview_id = getUrlVars()["preview_id"];
+                if(preview_id=='' || preview_id==null || preview_id=='undefined'){
+                  $("#noModal").modal('show');
+
+                  window.location.replace("online-application.html");
+                }else{
+                  $.getJSON("http://localhost:8081/bper-online/fetchSubmitApplications?preview_id="+preview_id, function (listSize) {
+                    if(listSize!=0){
+                      window.location.replace("online-application.html");
+                     }else{
+                        $.getJSON("http://localhost:8081/bper-online/retreivePreview?preview_id="+preview_id, function (data) {
+                        $("#candidateFullName").html(data.candidate_full_name);
+                        $("#fatherName").html(data.father_name);
+                        $("#motherName").html(data.mother_name);
+                        $("#mobileNumber").html(data.mobile_number);
+                        $("#verified").html(data.mobile_number_verified);
+                        $("#emailId").html(data.email_id);
+                        $("#dob").html(data.dob);
+                        $("#gender").html(data.gender);
+                        $("#communicationAddress").html(data.communication_address);
+                        $("#nationality").html(data.nationality);
+                        $("#religion").html(data.religion);
+                        $("#community").html(data.community);
+                        $("#handicapped").html(data.handicapped);
+                        $("#qualification").html(data.qualification);
+                        $("#stream").html(data.stream);
+                        $("#university").html(data.university);
+                        $("#yearofpassing").html(data.yearofpassing);
+                        $("#percentage").html(data.percentage);
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchCoursesId?mainCourseId="+data.course_select, function (resp) {
+                            $("#courseSelect").html(resp.course_name);
+                        });
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchCourseCategoriesId?mainCourseId="+data.course_category, function (respp) {
+                            $("#courseCategory").html(respp.sub_main_course);
+                        });
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchCourseStreamId?courseId="+data.course_stream, function (resppp) {
+                            $("#courseStream").html(resppp.main_stream_name);
+                        });
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchCourseDurationId?durationId="+data.course_duration, function (respppp) {
+                            $("#durationSelect").html(respppp.duration_name);
+                        });
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchPhotoAndAadhar?preview_id="+preview_id+"&document_type=Photo", function (photosrc) {
+                            $("#image-preview").attr("src", photosrc.preview_document_path);
+                        });
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchPhotoAndAadhar?preview_id="+preview_id+"&document_type=Aadhaar", function (adharsrc) {
+                            $("#image-preview-aadhar").attr("src", adharsrc.preview_document_path);
+                        });
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchPhotoAndAadhar?preview_id="+preview_id+"&document_type=Signature", function (signsrc) {
+                            $("#image-preview-sign").attr("src", signsrc.preview_document_path);
+                        });
+
+
+                        $.getJSON("http://localhost:8081/bper-online/fetchEducation?preview_id="+preview_id+"&document_type=Education", function (edsrc) {
+                          $.each(edsrc, function (key, val) {
+                            $("#eduCertificate").append("<li class='list-group-item'><a href='"+val.preview_document_path+"' target='_blank'>"+val.document_file_name+"</a></li>");
+                          });
+                        });
+                      });
+                    }
+                  });
+                  
+                  }   
+                $("#previewSubmit").click(function(){
+                        $("#exampleModal").modal('show');
+                });
+
+                $.getJSON("http://ipinfo.io", function (data) {
+                  $("#ipaddress").val(data.ip);
+                });
+
+                $("#exampleModal #modalSubmit").click(function(){
+                
+                  $("#overlay").fadeIn(300);
+                  $.ajax({
+                            url: "http://localhost:8081/bper-online/insertStudentApplication?preview_id="+preview_id+"&added_ip="+ $("#ipaddress").val(),
+                            async: false,
+                            cache: false,
+                            dataType: "json",
+                            success: function (response) {
+                                console.log(response);
+                                if(response.message='success'){
+                                    $("#overlay").fadeOut(300);
+                                    $("#exampleModal").modal('hide');
+                                    var arr = response.previewid.split('^');
+                                    $("#pmd-title-dialog #applicationRefNo").html(arr[0]);
+                                    $("#pmd-title-dialog").modal('show');
+                                }
+                            }, error: function (jq, status, message) {
+                                $("#overlay").fadeOut(300);
+                                console.log('A jQuery error has occurred. Status: ' + status + ' - Message: ' + message);
+                             }
+                    });
+                  });
+
+
+                  $("#pmd-title-dialog #homePage").click(function(){
+                    window.location.replace("online-application.html");
+                  });
+
+
+                  $("#exampleModal #editApplication").click(function(){
+                    window.location.replace("online-application.html?preview_id="+preview_id);
+                  });
+
+                  $("#editApplication").click(function(){
+                    window.location.replace("online-application.html?preview_id="+preview_id);
+                  });
+
+
+              });
+        </script>
+</body>
+
+</html>
